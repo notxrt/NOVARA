@@ -84,7 +84,7 @@ footer{border-top:1px solid var(--line);margin:45px 5px 0;padding:28px 0;color:#
 .continue-section{display:none}.continue-section.show{display:block}.continue-row{display:flex;gap:14px;overflow-x:auto;padding:2px 5px 14px;scrollbar-width:none}.continue-row::-webkit-scrollbar{display:none}.continue-card{flex:0 0 290px;position:relative;background:#0e1013;border:1px solid var(--line);border-radius:12px;overflow:hidden;cursor:pointer}.continue-card:hover{transform:translateY(-3px)}.continue-card img{width:100%;height:150px;object-fit:cover;display:block}.continue-card-body{padding:10px 12px 12px}.continue-title{font-size:14px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.continue-meta{font-size:11px;color:#8f9197;margin-top:4px}.continue-progress{height:4px;background:#292c31}.continue-progress span{display:block;height:100%;background:var(--accent);width:0}.continue-remove{position:absolute;right:8px;top:8px;width:30px;height:30px;border:0;border-radius:50%;background:#050608cc;color:#fff;font-size:18px}.continue-badge{position:absolute;left:8px;top:8px;padding:5px 7px;border-radius:6px;background:#050608cc;color:#fff;font-size:10px;font-weight:800}
 
 .startup{position:fixed;inset:0;z-index:1000;background:#050608;display:flex;align-items:center;justify-content:center;transition:opacity .6s ease,visibility .6s ease}.startup.hide{opacity:0;visibility:hidden;pointer-events:none}.startup-inner{text-align:center}.startup-logo{font-size:56px;font-weight:950;letter-spacing:-3px}.startup-logo span{color:var(--accent)}.startup-sub{color:#8b8e95;margin-top:8px}.startup-loader{width:190px;height:3px;background:#1d2025;border-radius:9px;overflow:hidden;margin:25px auto 0}.startup-loader i{display:block;width:45%;height:100%;background:var(--accent);animation:startupLoad 1.1s infinite ease-in-out}@keyframes startupLoad{0%{transform:translateX(-120%)}100%{transform:translateX(420%)}}
-.continue-section{display:none}.continue-section.show{display:block}.continue-row{display:flex;gap:14px;overflow-x:auto;padding:2px 5px 14px;scrollbar-width:none}.continue-row::-webkit-scrollbar{display:none}.continue-card{flex:0 0 290px;position:relative;background:#0e1013;border:1px solid var(--line);border-radius:12px;overflow:hidden;cursor:pointer}.continue-card:hover{transform:translateY(-3px)}.continue-card img{width:100%;height:150px;object-fit:cover;display:block}.continue-card-body{padding:10px 12px 12px}.continue-title{font-size:14px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.continue-meta{font-size:11px;color:#8f9197;margin-top:4px}.continue-progress{height:4px;background:#292c31}.continue-progress span{display:block;height:100%;background:var(--accent);width:0}.continue-remove{position:absolute;right:8px;top:8px;width:30px;height:30px;border:0;border-radius:50%;background:#050608cc;color:#fff;font-size:18px}.continue-badge{position:absolute;left:8px;top:8px;padding:5px 7px;border-radius:6px;background:#050608cc;color:#fff;font-size:10px;font-weight:800}
+
 .provider-page{position:fixed;inset:0;z-index:120;background:#07080a;display:none;overflow:auto}.provider-page.show{display:block}.provider-page-head{min-height:280px;padding:34px 6vw;display:flex;align-items:end;background:linear-gradient(135deg,var(--provider-color),#07080a 72%)}.provider-page-logo{width:90px;height:90px;object-fit:contain;background:#fff;border-radius:18px;padding:12px;margin-right:22px}.provider-page h1{font-size:48px;margin:0}.provider-page-main{padding:25px 6vw 70px}.provider-page-close{position:absolute;right:25px;top:22px;border:0;background:#ffffff22;color:#fff;border-radius:22px;padding:10px 16px;font-weight:800}.provider-page-accent{color:var(--provider-color)}
 .search-page{position:fixed;inset:0;z-index:125;background:#07080a;display:none;overflow:auto;padding:88px 5vw 70px}.search-page.show{display:block}.search-page-head{display:flex;align-items:center;gap:16px;margin-bottom:24px}.search-page-head h1{font-size:38px;margin:0}.search-page-close{border:1px solid var(--line);background:#ffffff0b;color:#fff;border-radius:22px;padding:10px 16px;font-weight:800}.search-page-input{flex:1;max-width:650px;height:46px;border:1px solid var(--line);border-radius:24px;background:#101216;color:#fff;padding:0 18px;outline:0}.search-page-input:focus{border-color:#ffffff44}.provider-tabs{display:flex;gap:8px;margin-bottom:22px}.provider-tab{border:1px solid var(--line);background:#ffffff08;color:#aaa;padding:10px 16px;border-radius:22px;font-weight:750}.provider-tab.active{background:var(--provider-color);border-color:transparent;color:#fff}.provider-page .grid,.search-page .grid{grid-template-columns:repeat(auto-fill,minmax(180px,1fr))}
 
@@ -92,26 +92,72 @@ footer{border-top:1px solid var(--line);margin:45px 5px 0;padding:28px 0;color:#
 .provider-page{background:#050507;isolation:isolate}.provider-page:before,.provider-page:after{content:"";position:absolute;inset:-30%;pointer-events:none;z-index:-1;background:radial-gradient(circle at 15% 20%,color-mix(in srgb,var(--provider-color) 35%,transparent),transparent 28%),radial-gradient(circle at 80% 70%,color-mix(in srgb,var(--provider-color) 22%,transparent),transparent 30%);filter:blur(45px);animation:providerFloat 10s ease-in-out infinite alternate}.provider-page:after{transform:rotate(180deg);animation-duration:14s;opacity:.75}.provider-page-head{position:relative;overflow:hidden}.provider-page-head:after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 15%,#ffffff10 30%,transparent 45%);transform:translateX(-120%);animation:providerSweep 7s linear infinite}.provider-page-head>*{position:relative;z-index:2}.provider-page-logo{box-shadow:0 20px 70px color-mix(in srgb,var(--provider-color) 35%,transparent);animation:providerPulse 4s ease-in-out infinite}.provider-page .poster{animation:providerRise .55s both}.provider-page .poster:nth-child(2n){animation-delay:.06s}.provider-page .poster:nth-child(3n){animation-delay:.12s}.provider-page .poster:hover{box-shadow:0 20px 45px color-mix(in srgb,var(--provider-color) 20%,transparent)}
 .cast-row{display:flex;gap:14px;overflow-x:auto;padding:3px 3px 14px;scrollbar-width:none}.cast-row::-webkit-scrollbar{display:none}.cast-card{flex:0 0 130px;cursor:pointer;transition:.25s}.cast-card:hover{transform:translateY(-7px)}.cast-card img{width:130px;height:175px;object-fit:cover;border-radius:12px;background:#15171a;display:block}.cast-name{font-weight:800;font-size:13px;margin:8px 2px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.cast-role{font-size:11px;color:#8f9197;margin:3px 2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.person-modal{position:fixed;inset:0;z-index:300;background:#000b;backdrop-filter:blur(16px);display:none;place-items:center;padding:30px}.person-modal.show{display:grid}.person-card{position:relative;width:min(900px,94vw);max-height:88vh;overflow:auto;background:#101216;border:1px solid #ffffff16;border-radius:24px;padding:30px;box-shadow:0 30px 100px #000}.person-close{position:absolute;right:18px;top:16px;width:40px;height:40px;border:0;border-radius:50%;background:#ffffff12;color:#fff;font-size:25px}.person-top{display:grid;grid-template-columns:190px 1fr;gap:28px}.person-top img{width:190px;height:285px;object-fit:cover;border-radius:16px;background:#191b1f}.person-top h2{font-size:40px;margin:4px 0 10px}.person-meta{color:#aaa;margin-bottom:15px}.person-top p{color:#ccc;line-height:1.65}.person-credits{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}.person-credit{padding:8px 11px;border:1px solid #ffffff12;background:#ffffff07;border-radius:10px;color:#ddd;font-size:12px}
 @keyframes providerFloat{from{transform:translate3d(-3%,0,0) scale(1)}to{transform:translate3d(4%,3%,0) scale(1.08)}}@keyframes providerSweep{to{transform:translateX(120%)}}@keyframes providerPulse{50%{transform:translateY(-4px) scale(1.025)}}@keyframes providerRise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}@media(max-width:700px){.person-top{grid-template-columns:1fr}.person-top img{width:150px;height:225px}.person-top h2{font-size:30px}}
+.settings{position:fixed;inset:0;z-index:120;background:#020304ee;backdrop-filter:blur(22px);display:none;align-items:stretch;justify-content:center;padding:18px}.settings.show{display:flex}.settings-shell{width:min(1180px,100%);height:100%;display:grid;grid-template-columns:250px 1fr;background:#0b0d10;border:1px solid #ffffff12;border-radius:24px;overflow:hidden;box-shadow:0 30px 120px #000}.settings-side{padding:26px 16px;border-right:1px solid #ffffff0d;background:#090b0e;display:flex;flex-direction:column;gap:6px}.settings-brand{font-size:19px;font-weight:900;padding:4px 12px 24px}.settings-brand span{color:var(--accent);margin-right:8px}.settings-tab{border:0;background:transparent;color:#969aa3;text-align:left;padding:13px 14px;border-radius:11px;font-weight:750}.settings-tab:hover,.settings-tab.active{background:#ffffff0a;color:#fff}.settings-close-side{margin-top:auto;border:1px solid #ffffff12;background:#ffffff05;color:#aaa;border-radius:11px;padding:12px;font-weight:750}.settings-main{padding:34px 42px;overflow:auto}.settings-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:30px}.settings-top h2{font-size:32px;margin:5px 0 0}.settings-x{width:40px;height:40px;border:1px solid #ffffff12;background:#ffffff07;color:#fff;border-radius:50%;font-size:23px}.settings-panel{display:none;max-width:820px}.settings-panel.active{display:block}.settings-cardline,.beta-head{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:20px;border:1px solid #ffffff0c;background:#101318;border-radius:15px;margin-bottom:10px}.settings-cardline b,.beta-head b{display:block;font-size:14px}.settings-cardline span,.beta-head span{display:block;color:#8f939d;font-size:12px;margin-top:5px;line-height:1.45}.settings-cardline select{min-width:170px;padding:10px 12px;border-radius:10px;border:1px solid #30343d;background:#090b0e;color:#fff}.setting-status{color:#72e6a8!important;font-weight:800}.toggle{width:48px;height:28px;border:0;border-radius:20px;background:#30343b;position:relative;flex:0 0 auto}.toggle i{position:absolute;width:20px;height:20px;left:4px;top:4px;border-radius:50%;background:#aaa;transition:.2s}.toggle.on{background:var(--accent)}.toggle.on i{left:24px;background:var(--accentText)}.settings-danger{border:1px solid #63262b;background:#2b1013;color:#ff929b;border-radius:10px;padding:10px 13px;font-weight:800}.settings-note{padding:16px;border:1px dashed #ffffff15;border-radius:13px;color:#858993;font-size:12px;line-height:1.6} .beta-head{background:linear-gradient(135deg,#16121e,#101318)}
+.beta-program{padding:22px;border:1px solid #7d4dff44;background:linear-gradient(135deg,#171222,#101318);border-radius:18px;margin-bottom:12px;box-shadow:0 14px 40px #0004}.beta-program-top{display:flex;justify-content:space-between;align-items:flex-start;gap:15px}.beta-program h3{margin:3px 0 6px;font-size:19px}.beta-program p{margin:0;color:#969ba7;font-size:12px;line-height:1.55}.beta-program-badge{display:inline-flex;align-items:center;gap:6px;padding:6px 9px;border-radius:999px;background:#7d4dff1a;color:#bca5ff;border:1px solid #7d4dff40;font-size:10px;font-weight:900}.beta-enroll{margin-top:15px;border:0;background:#7d4dff;color:#fff;border-radius:11px;padding:11px 16px;font-weight:900;cursor:pointer}.beta-enroll:hover{filter:brightness(1.08);transform:translateY(-1px)}.beta-program-status{display:none;margin-top:13px;padding:11px 12px;border-radius:10px;background:#72e6a812;border:1px solid #72e6a82a;color:#72e6a8;font-size:11px;font-weight:800}.beta-program.enrolled .beta-program-status{display:block}.beta-program.enrolled .beta-enroll{background:#252a32;color:#d8dbe2}.beta-gated{display:none}.beta-program.enrolled~.beta-gated{display:flex}.beta-program.enrolled~.beta-ai-box.beta-gated{display:block}.beta-pill{background:#7d4dff!important;color:#fff!important;padding:5px 9px;border-radius:999px;font-size:10px!important;font-weight:900}.about-box{text-align:center;padding:60px 20px;border:1px solid #ffffff0c;border-radius:18px;background:#ffffff03}.about-logo{font-size:56px;color:var(--accent)}.about-box h2{font-size:38px;margin:10px 0 4px}.about-box p{color:#8f939d}.about-version{display:inline-block;margin-top:12px;padding:7px 10px;border-radius:999px;background:#ffffff08;color:#aaa;font-size:11px}.changelog{position:fixed;inset:0;z-index:1100;background:#000d;backdrop-filter:blur(18px);display:none;place-items:center;padding:20px}.changelog.show{display:grid}.changelog-box{width:min(650px,94vw);max-height:82vh;overflow:auto;background:#111419;border:1px solid #ffffff14;border-radius:22px;padding:28px;box-shadow:0 30px 100px #000}.changelog-head h2{margin:0;font-size:27px}.changelog-version{color:var(--accent);font-size:12px;font-weight:900;letter-spacing:1px;margin:5px 0 20px}.change-item{padding:15px 0;border-top:1px solid #ffffff0c}.change-item b{font-size:14px}.change-item p{margin:5px 0 0;color:#969aa3;font-size:13px;line-height:1.55}.changelog-ok{width:100%;border:0;border-radius:12px;padding:13px;background:var(--accent);color:var(--accentText);font-weight:900;margin-top:18px}@media(max-width:760px){.settings{padding:0}.settings-shell{border-radius:0;grid-template-columns:1fr}.settings-side{height:auto;max-height:220px;border-right:0;border-bottom:1px solid #ffffff0d;padding:15px}.settings-brand{padding:4px 10px 10px}.settings-tab{display:inline-block;padding:9px 10px}.settings-close-side{display:none}.settings-main{padding:24px 18px}.settings-top h2{font-size:27px}}
+/* AI Beta — simplified UI */
+.beta-ai-box.ai-simple{margin-top:14px;padding:20px;border:1px solid #ffffff10;background:linear-gradient(145deg,#15121d,#0f1217);border-radius:18px;box-shadow:0 16px 45px #0005}.ai-kicker{font-size:10px;letter-spacing:1.2px;color:var(--accent);font-weight:900;margin-bottom:4px}.ai-simple .beta-ai-title{display:flex;align-items:flex-start;justify-content:space-between;gap:15px}.ai-simple .beta-ai-title b{font-size:20px}.ai-simple .beta-ai-title span:not(.beta-pill){font-size:12px;line-height:1.5}.ai-steps{display:flex;gap:8px;flex-wrap:wrap;margin:17px 0 16px}.ai-steps span{font-size:11px;color:#a8acb7;background:#ffffff06;border:1px solid #ffffff0b;border-radius:999px;padding:7px 10px}.ai-steps i{font-style:normal;display:inline-grid;place-items:center;width:17px;height:17px;margin-right:5px;border-radius:50%;background:var(--accent);color:var(--accentText);font-weight:900}.ai-key-wrap{position:relative}.ai-key-wrap .ai-input{padding-right:58px}.ai-show{position:absolute;right:7px;top:7px;border:0;background:#ffffff08;color:#b9bdc7;border-radius:8px;padding:7px 9px;font-size:11px;font-weight:800;cursor:pointer}.ai-label{display:block;font-size:11px;font-weight:800;color:#c6c9d2;margin:0 0 7px}.ai-input{width:100%;box-sizing:border-box;background:#090b0f;border:1px solid #2a2e38;color:#fff;border-radius:10px;padding:11px 12px;outline:none;transition:.2s}.ai-input:focus{border-color:var(--accent);box-shadow:0 0 0 3px #e5091420}.ai-textarea{min-height:82px;resize:vertical}.ai-preferences{margin-top:14px}.ai-preferences>div{min-width:0}.ai-chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:7px}.ai-chips button{border:1px solid #ffffff0e;background:#ffffff06;color:#9da2ae;border-radius:999px;padding:5px 8px;font-size:10px;cursor:pointer}.ai-chips button:hover{background:#ffffff0d;color:#fff}.ai-bottom{display:flex;align-items:center;gap:10px;margin-top:15px}.ai-model-mini{display:flex;align-items:center;gap:7px;color:#777d89;font-size:10px}.ai-model{background:#090b0f;color:#ddd;border:1px solid #2a2e38;border-radius:9px;padding:9px;font-size:11px}.ai-recommend{flex:1;border:0;background:var(--accent);color:var(--accentText);border-radius:10px;padding:12px 15px;font-weight:900;cursor:pointer;transition:.2s}.ai-recommend:hover{transform:translateY(-1px);filter:brightness(1.08)}.ai-recommend span{margin-right:5px}.ai-note{margin-top:10px;color:#777d89;font-size:10px;line-height:1.45}.ai-status{min-height:18px;margin-top:12px;color:#8f96a5;font-size:11px}.ai-results{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:10px}.ai-result{display:flex;gap:10px;padding:10px;border:1px solid #ffffff0b;background:#ffffff04;border-radius:12px;cursor:pointer;min-width:0}.ai-result:hover{background:#ffffff08;transform:translateY(-1px)}.ai-result img{width:54px;height:78px;object-fit:cover;border-radius:7px;background:#171a20;flex:0 0 auto}.ai-result>div{min-width:0}.ai-result b{display:block;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.ai-result small{display:block;color:#777d89;font-size:9px;margin:4px 0}.ai-result p{color:#999eaa;font-size:10px;line-height:1.35;margin:6px 0 0}.ai-score{display:inline-block;margin-top:2px;color:#72e6a8;font-size:9px;font-weight:900}.ai-simple .settings-note{margin-top:10px}@media(max-width:760px){.ai-results{grid-template-columns:1fr 1fr}.ai-bottom{align-items:stretch;flex-direction:column}.ai-model-mini{justify-content:space-between}.ai-recommend{width:100%}}@media(max-width:500px){.ai-results{grid-template-columns:1fr}.ai-steps span{flex:1;text-align:center}}
+
+/* NOVARA AI onboarding */
+.ai-onboarding{position:fixed;inset:0;background:rgba(3,4,8,.88);backdrop-filter:blur(20px);z-index:12000;display:none;align-items:center;justify-content:center;padding:20px}.ai-onboarding.show{display:flex}.ai-onboard-card{width:min(760px,100%);max-height:90vh;overflow:auto;background:linear-gradient(180deg,#171a22,#0e1016);border:1px solid #2a2f3a;border-radius:24px;box-shadow:0 30px 90px #000b;padding:28px}.ai-onboard-top{display:flex;justify-content:space-between;gap:20px;align-items:flex-start}.ai-onboard-kicker{color:#e50914;font-size:11px;font-weight:800;letter-spacing:.14em}.ai-onboard-card h2{margin:6px 0 5px;font-size:28px}.ai-onboard-card p{margin:0;color:#aeb4c2}.ai-close{border:0;background:#242832;color:#fff;width:38px;height:38px;border-radius:50%;cursor:pointer;font-size:18px}.ai-progress{display:flex;gap:8px;margin:22px 0}.ai-progress span{height:4px;flex:1;border-radius:9px;background:#292e38}.ai-progress span.on{background:#e50914}.ai-search-wrap{display:flex;gap:10px;margin:18px 0}.ai-search-wrap input{flex:1}.ai-onboard-search{width:100%;box-sizing:border-box;padding:14px 16px;border-radius:12px;border:1px solid #303642;background:#0a0c11;color:#fff;outline:none}.ai-onboard-search:focus{border-color:#e50914}.ai-search-results{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;max-height:300px;overflow:auto}.ai-pick{display:flex;gap:12px;padding:10px;border:1px solid #292e38;border-radius:14px;background:#12151b;cursor:pointer;text-align:left;color:#fff}.ai-pick:hover{border-color:#555d6d;transform:translateY(-1px)}.ai-pick.selected{border-color:#e50914;box-shadow:0 0 0 1px #e50914 inset}.ai-pick img{width:54px;height:80px;object-fit:cover;border-radius:8px;background:#20242c}.ai-pick b{display:block;margin-top:3px}.ai-pick small{display:block;color:#8e96a5;margin-top:5px}.ai-selected{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0;min-height:74px}.ai-selected-card{position:relative;width:78px}.ai-selected-card img{width:78px;height:110px;object-fit:cover;border-radius:10px}.ai-selected-card span{display:block;font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:5px}.ai-remove{position:absolute;right:-6px;top:-6px;border:0;background:#e50914;color:#fff;width:22px;height:22px;border-radius:50%;cursor:pointer}.ai-onboard-actions{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:20px}.ai-onboard-btn{border:0;border-radius:12px;padding:13px 18px;font-weight:800;cursor:pointer;background:#e50914;color:#fff}.ai-onboard-btn.secondary{background:#242832}.ai-onboard-btn:disabled{opacity:.45;cursor:not-allowed}.ai-key-onboard{margin-top:18px}.ai-key-onboard label{display:block;font-size:12px;font-weight:700;margin-bottom:7px}.ai-onboard-note{font-size:12px;color:#777f8d;margin-top:10px}.ai-onboard-status{min-height:20px;color:#8e96a5;font-size:13px;margin-top:10px}.ai-favorite-summary{margin-top:18px;padding:14px;border-radius:14px;background:#12151b;border:1px solid #292e38}.ai-favorite-summary b{display:block;margin-bottom:4px}@media(max-width:650px){.ai-search-results{grid-template-columns:1fr}.ai-onboard-card{padding:20px}.ai-onboard-actions{align-items:stretch;flex-direction:column}.ai-onboard-btn{width:100%}}
+
+.device-choice{position:fixed;inset:0;z-index:10050;background:rgba(3,4,6,.88);backdrop-filter:blur(22px);display:none;align-items:center;justify-content:center;padding:20px}.device-choice.show{display:flex}.device-card{width:min(520px,100%);background:linear-gradient(180deg,#15181d,#0d0f12);border:1px solid rgba(255,255,255,.12);border-radius:26px;padding:30px;box-shadow:0 30px 100px #000c;text-align:center}.device-kicker{font-size:11px;letter-spacing:2px;font-weight:900;color:#e50914}.device-card h2{font-size:30px;margin:8px 0 7px}.device-card p{color:#9297a1;margin:0 auto 22px;max-width:400px;line-height:1.5}.device-options{display:grid;grid-template-columns:1fr 1fr;gap:12px}.device-btn{border:1px solid #2c3038;background:#191c21;color:#fff;border-radius:17px;padding:19px 12px;cursor:pointer;font-weight:850;font-size:15px;transition:.18s}.device-btn:hover{transform:translateY(-2px);border-color:#e50914;background:#211417}.device-btn .device-icon{display:block;font-size:30px;margin-bottom:7px}.device-skip{display:block;margin:17px auto 0;background:none;border:0;color:#737983;cursor:pointer}.device-mobile-bar{display:none;position:fixed;left:12px;right:12px;bottom:12px;z-index:110;padding:11px 13px;border:1px solid rgba(255,255,255,.12);background:rgba(13,15,18,.94);backdrop-filter:blur(16px);border-radius:15px;box-shadow:0 12px 40px #0009}.device-mobile-bar button{float:right;border:1px solid #30343d;background:#1a1d22;color:#fff;border-radius:10px;padding:7px 10px;cursor:pointer}.device-mobile-mode .navlinks{overflow-x:auto}.device-mobile-mode .hero{min-height:55vh}.device-mobile-mode .nav{padding:10px 12px}.device-mobile-mode .card{min-width:145px}@media(max-width:650px){.device-options{grid-template-columns:1fr}.device-card{padding:24px}.device-card h2{font-size:25px}}
+
+/* Enhanced TV remote focus */
+.remote-focus{outline:3px solid var(--accent,#fff)!important;outline-offset:5px!important;box-shadow:0 0 0 6px #ffffff18,0 10px 40px #0008!important;transform:translateY(-2px) scale(1.025);z-index:20!important}
+.remote-play-target.remote-focus{filter:brightness(1.15)}
+#tvControls select.remote-focus{outline:3px solid var(--accent,#fff)!important;outline-offset:3px}
 </style>
-</head>
+<style>
+/* Performance mode */
+body.performance-mode *,body.performance-mode *::before,body.performance-mode *::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
+body.performance-mode .nav,body.performance-mode .settings,body.performance-mode .provider-page,body.performance-mode .person-modal,body.performance-mode .changelog{backdrop-filter:none!important}
+body.performance-mode .hero-bg:after{background:linear-gradient(90deg,#050608f5,#050608b8 45%,#05060855)}
+body.performance-mode .poster:hover{transform:none!important;box-shadow:none!important}
+body.lite-images .poster img{content-visibility:auto}
+body.reduce-motion *,body.reduce-motion *::before,body.reduce-motion *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+@media(max-width:900px){.navlinks button{padding:9px 10px;font-size:12px}}
+</style>
+<style id="novara-theme-polish">
+select{appearance:none;-webkit-appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--accent) 50%),linear-gradient(135deg,var(--accent) 50%,transparent 50%);background-position:calc(100% - 16px) 50%,calc(100% - 11px) 50%;background-size:5px 5px,5px 5px;background-repeat:no-repeat;padding-right:34px!important;cursor:pointer;box-shadow:0 8px 24px #0002}select:hover{border-color:color-mix(in srgb,var(--accent) 55%,#fff 5%)!important}select:focus{outline:none;border-color:var(--accent)!important;box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 20%,transparent),0 10px 30px #0004!important}
+body[data-theme="midnight"]{--bg:#05070b;--accent:#f5f7fa;--accentText:#08090b;--glass:#10141bcc}
+body[data-theme="purple"]{--bg:#090612;--accent:#a970ff;--accentText:#160a25;--glass:#171020d9}
+body[data-theme="blue"]{--bg:#031019;--accent:#42c8ff;--accentText:#031018;--glass:#0a1720dc}
+body[data-theme="red"]{--bg:#100507;--accent:#ff5263;--accentText:#240307;--glass:#1b0c10dc}
+body[data-theme="emerald"]{--bg:#03100c;--accent:#35e29a;--accentText:#03150e;--glass:#091913dc}
+body{background:radial-gradient(circle at 10% -10%,color-mix(in srgb,var(--accent) 9%,transparent),transparent 32%),var(--bg)}
+.nav{background:color-mix(in srgb,var(--bg) 82%,transparent);border-bottom-color:color-mix(in srgb,var(--accent) 12%,transparent)}
+.primary,.save,.changelog-ok{box-shadow:0 10px 30px color-mix(in srgb,var(--accent) 18%,transparent)}
+.poster:hover{box-shadow:0 22px 55px color-mix(in srgb,var(--accent) 18%,transparent)}
+.settings-cardline:hover{border-color:color-mix(in srgb,var(--accent) 18%,transparent);background:color-mix(in srgb,var(--accent) 4%,#101318)}
+.provider-shell{width:min(1280px,calc(100% - 32px));height:min(900px,calc(100vh - 32px));margin:16px auto;background:#07090c;border:1px solid #ffffff12;border-radius:26px;overflow:hidden;box-shadow:0 35px 120px #000d;position:relative}
+.provider-page{background:rgba(2,3,5,.82);backdrop-filter:blur(18px);padding:0;overflow:auto}
+.provider-page-head{min-height:240px}.provider-page-main{overflow:auto;height:calc(100% - 240px)}
+body.compact-cards .poster{min-width:135px}.poster .sub{transition:opacity .2s}body.hide-ratings .poster .sub{font-size:0}body.hide-ratings .poster .sub::before{content:' ';font-size:0}body.no-hover .poster:hover{transform:none!important;box-shadow:none!important}body.no-backdrop-effects .hero-bg:after,body.no-backdrop-effects .detail-bg,body.no-backdrop-effects .provider-page:before,body.no-backdrop-effects .provider-page:after{filter:none!important;animation:none!important}
+body.font-large{font-size:106%}body.font-xlarge{font-size:114%}body.high-contrast{--line:rgba(255,255,255,.22)}body.high-contrast .small,body.high-contrast .muted{color:#c7cad1!important}body.show-focus *:focus-visible{outline:3px solid var(--accent)!important;outline-offset:3px}
+@media(max-width:760px){.provider-shell{width:100%;height:100%;margin:0;border-radius:0}.provider-page-main{height:calc(100% - 240px)}}
+</style>
+<style id="dedicated-upgrades">
+.dedicated-page{position:fixed;inset:0;z-index:140;background:var(--bg);display:none;overflow:auto;padding:92px 4vw 70px}.dedicated-page.show{display:block}.dedicated-shell{max-width:1400px;margin:auto}.dedicated-head{display:flex;align-items:end;gap:22px;padding:20px 0 28px;border-bottom:1px solid var(--line)}.dedicated-head h1{font-size:54px;letter-spacing:-2px;margin:3px 0 5px}.dedicated-head p{margin:0;color:#9297a1}.dedicated-back,.dedicated-actions button,.dedicated-filter{border:1px solid var(--line);background:#ffffff08;color:#fff;border-radius:12px;padding:10px 14px;font-weight:800}.dedicated-back{align-self:flex-start}.dedicated-actions{margin-left:auto;display:flex;gap:8px}.dedicated-tools{display:flex;gap:8px;flex-wrap:wrap;padding:18px 0}.dedicated-filter{appearance:none}.dedicated-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(175px,1fr));gap:22px 13px}.dedicated-grid .poster{width:100%}.dedicated-grid .poster img{width:100%;height:270px}.dedicated-more{margin-top:28px}.ai-main-card{padding:20px;border:1px solid color-mix(in srgb,var(--accent) 18%,transparent);background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 7%,#101318),#101318);border-radius:18px}.ai-main-card b{font-size:20px}.ai-main-card p{color:#9297a1;margin:6px 0 15px}.ai-main-controls{display:grid;grid-template-columns:1fr 1.5fr auto;gap:9px}.ai-main-controls input{background:#090b0e;border:1px solid #2b3038;color:#fff;border-radius:10px;padding:12px;outline:0}.ai-main-controls input:focus{border-color:var(--accent)}.ai-main-controls button{white-space:nowrap}.ai-main-card .row{margin-top:12px}.ai-main-card .poster{flex-basis:150px}.ai-main-card .poster img{width:150px;height:220px}@media(max-width:760px){.dedicated-head{align-items:flex-start;flex-wrap:wrap}.dedicated-head h1{font-size:40px}.dedicated-actions{margin-left:0;width:100%}.ai-main-controls{grid-template-columns:1fr}.dedicated-grid{grid-template-columns:repeat(2,1fr)}.dedicated-grid .poster img{height:auto;aspect-ratio:2/3}}
+</style></head>
 <body>
-<div class="startup" id="startup"><div class="startup-inner"><div class="startup-logo"><span>✦</span> NOVARA</div><div class="startup-sub">Loading your streaming experience</div><div class="startup-loader"><i></i></div></div></div>
+<div class="startup" id="startup"><div class="startup-inner"><div class="startup-logo"><span>✦</span> NOVARA</div><div class="startup-sub">Loading your streaming experience</div><div class="startup-loader"><i></i></div></div></div><div class="device-choice" id="deviceChoice"><div class="device-card"><div class="device-kicker">✦ NOVARA</div><h2>How are you watching?</h2><p>Choose your device so NOVARA can use the best layout and controls for you.</p><div class="device-options"><button class="device-btn" onclick="chooseDevice('mobile')"><span class="device-icon">📱</span>I'm on Mobile<small>Touch-friendly layout</small></button><button class="device-btn" onclick="chooseDevice('pc')"><span class="device-icon">🖥️</span>I'm on PC<small>Desktop layout</small></button></div><button class="device-skip" onclick="chooseDevice('auto')">Use automatic detection</button></div></div><div class="device-mobile-bar" id="deviceMobileBar">Mobile layout is active <button onclick="openDeviceChoice()">Change</button></div><div class="changelog" id="changelog"><div class="changelog-box"><div class="small">WELCOME BACK</div><div class="changelog-head"><h2>What's new in NOVARA</h2></div><div class="changelog-version">VERSION 3.1 • SEPTEMBER 2026</div><div class="change-item"><b>Continue Watching fixed</b><p>Random and placeholder titles are removed. NOVARA now saves only real playback progress from a title you actually started.</p></div><div class="change-item"><b>Dedicated Settings</b><p>Settings now has Appearance, Playback, Continue Watching, Beta, and About tabs.</p></div><div class="change-item"><b>New Beta section</b><p>Experimental features can be enabled individually and saved on this device, including experimental playback and interface features.</p></div><div class="change-item"><b>Cleaner TV progress</b><p>Changing episodes no longer creates fake zero-progress cards.</p></div><div class="change-item"><b>TV Remote controls</b><p>TV Remote mode is now optional in Settings. When enabled, you can navigate titles with the arrow keys, press OK to select and play, use Back to return home from playback, choose streaming providers, and use the on-screen keyboard for search.</p></div><div class="change-item"><b>Instant remote playback</b><p>Highlight a movie or show and press OK to start it directly. While watching, Back exits playback and returns to the NOVARA home screen.</p></div><button class="changelog-ok" tabindex="0" data-remote-start="1" onclick="closeChangelog()">OK, got it</button></div></div>
 
 <nav class="nav">
  <div class="brand"><span>✦</span> NOVARA</div>
  <div class="navlinks">
-  <button class="active" onclick="home()">⌂ Home</button>
-  <button onclick="go('movies')">▣ Movies</button>
-  <button onclick="go('shows')">▣ Shows</button>
-  <button onclick="go('anime')">✧ Anime</button>
-  <button onclick="go('discover')">◉ Discover</button>
-  <button onclick="go('list')">▱ My List</button>
+  <button class="active" data-nav="home" onclick="home()">⌂ Home</button>
+  <button data-nav="movies" onclick="go('movies')">▣ Movies</button>
+  <button data-nav="shows" onclick="go('shows')">▣ Shows</button>
+  <button data-nav="anime" onclick="go('anime')">✧ Anime</button>
+  <button data-nav="discover" onclick="go('discover')">◉ Discover</button>
+  <button data-nav="recommended" onclick="go('recommended')">✦ For You</button>
+  <button data-nav="list" onclick="go('list')">▱ My List</button>
  </div>
  <div class="navright">
   <label class="search">⌕<input id="search" placeholder="Search" oninput="searchTMDB(this.value)"></label>
   <button class="navicon" onclick="openSettings()">⚙</button>
   <button class="navicon" onclick="openAdmin()" title="Admin">🛡️</button>
-  <button class="navicon">♣</button>
+  <button class="navicon" onclick="openProfile()" title="Profile"><span id="navAvatar">👤</span></button>
   <button class="signin" onclick="alert('Sign in can be connected to your own auth system.')">Sign In</button>
  </div>
 </nav>
@@ -124,12 +170,19 @@ footer{border-top:1px solid var(--line);margin:45px 5px 0;padding:28px 0;color:#
   <div id="heroGenres" class="genres"></div>
   <p id="heroDesc" class="desc"></p>
   <div id="heroMeta" class="meta"></div>
-  <div class="actions"><button class="primary" onclick="playCurrent()">▶ &nbsp; Play</button><button class="round" onclick="addCurrent()">＋</button><button class="round" onclick="openCurrent()">ⓘ</button></div>
+  <div class="actions"><button class="primary remote-play-target" tabindex="0" data-remote-start="1" onclick="playCurrent()">▶ &nbsp; Play</button><button class="round" onclick="addCurrent()">＋</button><button class="round" onclick="openCurrent()">ⓘ</button></div>
  </div>
  <div class="dots" id="dots"></div>
 </section>
 
 
+<div class="dedicated-page" id="dedicatedPage">
+  <div class="dedicated-shell">
+    <div class="dedicated-head"><button class="dedicated-back" onclick="closeDedicatedPage()">← Home</button><div><div class="small" id="dedicatedKicker">NOVARA</div><h1 id="dedicatedTitle">Movies</h1><p id="dedicatedSub">Browse the full catalog.</p></div><div class="dedicated-actions"><button onclick="randomDedicatedTitle()">⌘ Random</button><button onclick="refreshDedicatedPage()">↻ Refresh</button></div></div>
+    <div class="dedicated-tools" id="dedicatedTools"></div>
+    <div class="dedicated-grid" id="dedicatedGrid"></div><button class="load-more dedicated-more" id="dedicatedMore" onclick="loadDedicatedMore()">Load more</button>
+  </div>
+</div>
 <div class="detail-view" id="detailView">
  <button class="detail-back" onclick="closeDetails()">←</button>
  <div class="detail-bg" id="detailBg"></div>
@@ -141,7 +194,7 @@ footer{border-top:1px solid var(--line);margin:45px 5px 0;padding:28px 0;color:#
   <p class="detail-desc" id="detailDesc"></p>
   <div class="detail-meta" id="detailMeta"></div>
   <div class="detail-actions">
-   <button class="primary" onclick="playCurrent()">▶ &nbsp; Play</button>
+   <button class="primary remote-play-target" tabindex="0" data-remote-start="1" onclick="playCurrent()">▶ &nbsp; Play</button>
    <button class="round" onclick="playCurrentTrailer()" id="detailTrailerBtn">▷</button>
    <button class="round" onclick="addCurrent()">＋</button>
    <button class="round" onclick="shareCurrent()">↗</button>
@@ -189,6 +242,11 @@ footer{border-top:1px solid var(--line);margin:45px 5px 0;padding:28px 0;color:#
 
 <main>
 
+ <section class="section" id="recommended">
+  <div class="section-head"><div><h2>Recommended for You</h2><div class="small">Personalized from your NOVARA favorites</div></div><button class="viewall" onclick="loadRecommended()">Refresh →</button></div>
+  <div class="row" id="recommendedRow"></div>
+ </section>
+
  <section class="section">
   <div class="section-head"><h2>Browse by Service</h2><button class="viewall" onclick="loadProviders()">Refresh</button></div>
   <div class="providers" id="providers"></div>
@@ -228,33 +286,60 @@ footer{border-top:1px solid var(--line);margin:45px 5px 0;padding:28px 0;color:#
 </main>
 
 
-<div class="provider-page" id="providerPage"><button class="provider-page-close" onclick="closeProviderPage()">Close</button><div class="provider-page-head" id="providerPageHead"><img class="provider-page-logo" id="providerPageLogo" alt=""><div><div class="small">WATCH PROVIDER</div><h1 id="providerPageTitle">Provider</h1><div id="providerPageSub">Movies and shows available through this service</div></div></div><div class="provider-page-main"><div class="provider-tabs"><button class="provider-tab active" id="providerMoviesTab" onclick="switchProviderTab('movie')">Movies</button><button class="provider-tab" id="providerShowsTab" onclick="switchProviderTab('tv')">TV Shows</button></div><div class="section-head"><h2 id="providerMovieHeading">Popular Movies</h2></div><div class="grid" id="providerMovieGrid"></div></div></div>
-<div class="search-page" id="searchPage"><div class="search-page-head"><button class="search-page-close" onclick="closeSearchPage()">← Back</button><input class="search-page-input" id="searchPageInput" placeholder="Search movies and TV shows..." oninput="searchPageTMDB(this.value)"></div><div class="section-head"><h2 id="searchPageHeading">Search Results</h2></div><div class="grid" id="searchPageGrid"></div></div>
+<div class="profile-gate" id="profileGate">
+ <div class="profile-gate-panel">
+  <div class="profile-gate-top">
+   <div class="gate-logo">NOVARA</div>
+   <button class="manage-profiles-btn" id="manageProfilesBtn" onclick="toggleManageProfiles()">Manage Profiles</button>
+  </div>
+  <div class="gate-kicker" id="gateKicker">WELCOME BACK</div>
+  <h1 id="gateTitle">Who's watching?</h1>
+  <p id="gateSub">Choose a profile to continue.</p>
+  <div class="gate-profiles" id="gateProfiles"></div>
+  <button class="gate-add" id="gateAdd" onclick="startCreateProfile()"><span>＋</span><b>Add Profile</b></button>
+  <div class="gate-recent" id="gateRecent"></div>
+  <div class="gate-note">Profiles are saved on this device.</div><div class="remote-hint"><b>← ↑ ↓ →</b> Navigate &nbsp; <b>OK</b> Select &nbsp; <b>Back</b> Return</div>
+ </div>
+</div>
+
+<div class="profile-modal" id="profileModal" onclick="if(event.target===this)closeProfile()">
+ <div class="profile-card">
+  <button class="profile-close" onclick="closeProfile()">×</button>
+  <div class="profile-hero"><div class="profile-avatar" id="profileAvatarPreview">👤</div><div><div class="small">YOUR NOVARA PROFILE</div><h2 id="profileHeading">Guest</h2><p>Personalize NOVARA on this device.</p></div></div>
+  <div class="profile-fields"><label>Username<input id="profileName" maxlength="20" placeholder="Your name"></label><label>Bio<input id="profileBio" maxlength="80" placeholder="A little about you"></label></div>
+  <div class="profile-section-title">Choose your avatar</div><div class="pfp-grid" id="pfpGrid"></div>
+  <div class="profile-actions"><button class="profile-secondary" onclick="switchProfile()">Switch profile</button><button class="profile-save" onclick="saveProfile()">Save profile</button></div>
+  <div class="profile-stats"><span><b id="profileListCount">0</b><small>My List</small></span><span><b id="profileContinueCount">0</b><small>Watching</small></span><span><b id="profileBetaStatus">Off</b><small>Beta</small></span></div>
+ </div>
+</div>
+
+<div class="provider-page" id="providerPage" onclick="if(event.target===this)closeProviderPage()"><div class="provider-shell"><button class="provider-page-close" aria-label="Close provider" onclick="closeProviderPage()">✕</button><div class="provider-page-head" id="providerPageHead"><img class="provider-page-logo" id="providerPageLogo" alt=""><div><div class="small">WATCH PROVIDER</div><h1 id="providerPageTitle">Provider</h1><div id="providerPageSub">Movies and shows available through this service</div></div></div><div class="provider-page-main"><div class="provider-tabs"><button class="provider-tab active" id="providerMoviesTab" onclick="switchProviderTab('movie')">Movies</button><button class="provider-tab" id="providerShowsTab" onclick="switchProviderTab('tv')">TV Shows</button></div><div class="section-head"><h2 id="providerMovieHeading">Popular Movies</h2></div><div class="grid" id="providerMovieGrid"></div></div></div></div>
+<div class="search-page" id="searchPage"><div class="search-page-head"><button class="search-page-close" onclick="closeSearchPage()">← Back</button><input class="search-page-input" id="searchPageInput" placeholder="Search movies and TV shows..." readonly autocomplete="off"><button class="search-page-go" data-search-action="search" onclick="searchPageTMDB(document.getElementById('searchPageInput').value)">Search</button></div><div class="tv-keyboard" id="tvKeyboard"></div><div class="section-head"><h2 id="searchPageHeading">Search Results</h2></div><div class="grid" id="searchPageGrid"></div></div>
 
 <div class="player" id="player">
- <div class="player-head"><div class="player-title" id="playerTitle">Now Playing</div><button class="player-close" onclick="closePlayer()">Close</button></div>
+ <div class="player-head"><div class="player-title" id="playerTitle">Now Playing</div><button class="player-close remote-player-control" data-player-action="close" onclick="closePlayer()">Close</button></div>
  <div class="player-controls" id="tvControls">
-  <label>Season <select id="seasonSelect" onchange="loadEpisodes(this.value)"></select></label>
-  <label>Episode <select id="episodeSelect" onchange="playTVEpisode()"></select></label>
+  <label>Season <select id="seasonSelect" class="remote-player-control" data-player-action="season" onchange="loadEpisodes(this.value)"></select></label>
+  <label>Episode <select id="episodeSelect" class="remote-player-control" data-player-action="episode" onchange="playTVEpisode()"></select></label>
  </div>
- <iframe id="playerFrame" class="player-frame" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen referrerpolicy="origin"></iframe>
+ <div class="player-stage">
+  <iframe id="playerFrame" class="player-frame" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen referrerpolicy="origin"></iframe>
+  <div class="remote-player-bar" id="remotePlayerBar">
+   <button class="remote-player-control" data-player-action="back10" onclick="remotePlayerAction('back10')" aria-label="Back 10 seconds">↶ 10</button>
+   <button class="remote-player-control remote-play" data-player-action="playpause" onclick="remotePlayerAction('playpause')" aria-label="Play or pause">▶</button>
+   <button class="remote-player-control" data-player-action="forward10" onclick="remotePlayerAction('forward10')" aria-label="Forward 10 seconds">10 ↷</button>
+   <button class="remote-player-control" data-player-action="fullscreen" onclick="remotePlayerAction('fullscreen')" aria-label="Fullscreen">⛶</button>
+   <button class="remote-player-control" data-player-action="close" onclick="closePlayer()" aria-label="Close player">✕</button>
+  </div>
+ </div>
+ <div class="remote-player-hint">Remote: <b>← →</b> choose • <b>OK</b> select • <b>Back</b> close</div>
 </div>
 
 <div class="trailer-modal" id="trailerModal" onclick="if(event.target===this)closeTrailer()">
  <div class="trailer-box"><button class="trailer-close" onclick="closeTrailer()">×</button><iframe id="trailerFrame" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
 </div>
 
-<div class="settings" id="settings">
- <div class="settings-card">
-  <h2>NOVARA Settings</h2>
-  <p class="small">Customize the site and connect your TMDB account.</p>
-  <h3>Appearance</h3>
-  <div class="settings-row"><label for="themeSelect">Theme</label><select id="themeSelect" onchange="setTheme(this.value)"><option value="midnight">Midnight</option><option value="purple">Purple</option><option value="blue">Ocean Blue</option><option value="red">Crimson</option><option value="emerald">Emerald</option></select></div>
-  <h3>Video Providers</h3>
-  <p class="small">Choose a streaming provider from Browse by Service. NOVARA will open a dedicated provider page using that provider's accent color.</p>
-  <p class="small">TMDB's Discover endpoint is paginated, so All Movies loads the catalog page-by-page instead of trying to download the entire database at once.</p>
- </div>
-</div>
+<div class="settings" id="settings" onclick="if(event.target===this)closeSettings()"><div class="settings-shell"><aside class="settings-side"><div class="settings-brand"><span>✦</span>NOVARA</div><button class="settings-tab" data-tab="performance" onclick="switchSettingsTab('performance')">⚡ Performance</button><button class="settings-tab active" data-tab="appearance" onclick="switchSettingsTab('appearance')">🎨 Appearance</button><button class="settings-tab" data-tab="interface" onclick="switchSettingsTab('interface')">▦ Interface</button><button class="settings-tab" data-tab="playback" onclick="switchSettingsTab('playback')">▶ Playback</button><button class="settings-tab" data-tab="accessibility" onclick="switchSettingsTab('accessibility')">◉ Accessibility</button><button class="settings-tab" data-tab="continue" onclick="switchSettingsTab('continue')">↻ Continue Watching</button><button class="settings-tab" data-tab="beta" onclick="switchSettingsTab('beta')">🧪 Beta</button><button class="settings-tab" data-tab="about" onclick="switchSettingsTab('about')">ⓘ About</button><button class="settings-close-side" onclick="closeSettings()">← Close</button></aside><section class="settings-main"><div class="settings-top"><div><div class="small">PREFERENCES</div><h2 id="settingsTitle">Appearance</h2></div><button class="settings-x" onclick="closeSettings()">×</button></div><div class="settings-panel" id="settings-performance"><div class="settings-cardline"><div><b>Performance mode</b><span>Reduce animations, blur effects and heavy visual effects for a smoother experience.</span></div><button class="toggle" id="performanceToggle" onclick="togglePerformanceMode()"><i></i></button></div><div class="settings-cardline"><div><b>Lite images</b><span>Use smaller poster images and lazy-load more aggressively.</span></div><button class="toggle" id="liteImagesToggle" onclick="togglePerformanceSetting('liteImages')"><i></i></button></div><div class="settings-cardline"><div><b>Reduce motion</b><span>Disable decorative transitions and animations.</span></div><button class="toggle" id="reduceMotionToggle" onclick="togglePerformanceSetting('reduceMotion')"><i></i></button></div><div class="settings-note">Performance settings are saved on this device and can be changed anytime.</div></div><div class="settings-panel active" id="settings-appearance"><div class="settings-cardline"><div><b>Theme</b><span>Change NOVARA's accent and background.</span></div><select id="themeSelect" onchange="setTheme(this.value)"><option value="midnight">Midnight</option><option value="purple">Purple</option><option value="blue">Ocean Blue</option><option value="red">Crimson</option><option value="emerald">Emerald</option></select></div><div class="settings-cardline"><div><b>Interface</b><span>Keep the interface cinematic and minimal.</span></div><span class="setting-status">Enabled</span></div></div><div class="settings-panel" id="settings-interface"><div class="settings-cardline"><div><b>TV Remote</b><span>Enable D-pad, OK and Back remote controls. It stays OFF until you turn it on.</span></div><button class="toggle" id="tvRemoteToggle" onclick="toggleTVRemote()"><i></i></button></div><div class="settings-cardline"><div><b>Compact cards</b><span>Fit more titles across each row.</span></div><button class="toggle" id="compactCardsToggle" onclick="toggleVisualSetting('compactCards')"><i></i></button></div><div class="settings-cardline"><div><b>Hover effects</b><span>Enable poster lift and glow effects.</span></div><button class="toggle on" id="hoverEffectsToggle" onclick="toggleVisualSetting('hoverEffects')"><i></i></button></div><div class="settings-cardline"><div><b>Backdrop effects</b><span>Use cinematic background glow and gradients.</span></div><button class="toggle on" id="backdropEffectsToggle" onclick="toggleVisualSetting('backdropEffects')"><i></i></button></div><div class="settings-cardline"><div><b>Show ratings</b><span>Display TMDB ratings on title cards.</span></div><button class="toggle on" id="showRatingsToggle" onclick="toggleVisualSetting('showRatings')"><i></i></button></div></div><div class="settings-panel" id="settings-playback"><div class="settings-cardline"><div><b>Autoplay</b><span>Let CineSrc start playback automatically.</span></div><button class="toggle on" id="autoplayToggle" onclick="toggleSetting('autoplay')"><i></i></button></div><div class="settings-cardline"><div><b>Auto-next episodes</b><span>Allow the next TV episode to play automatically.</span></div><button class="toggle on" id="autonextToggle" onclick="toggleSetting('autonext')"><i></i></button></div></div><div class="settings-panel" id="settings-continue"><div class="settings-cardline"><div><b>Continue Watching</b><span>Only titles you actually start playing are saved.</span></div><button class="settings-danger" onclick="clearContinueWatching()">Clear history</button></div><div class="settings-note">Random and placeholder entries are removed. Progress is saved only from real CineSrc playback events.</div></div><div class="settings-panel" id="settings-accessibility"><div class="settings-cardline"><div><b>Text size</b><span>Adjust NOVARA's interface text.</span></div><select id="fontSizeSelect" onchange="setFontSize(this.value)"><option value="normal">Normal</option><option value="large">Large</option><option value="xlarge">Extra large</option></select></div><div class="settings-cardline"><div><b>High contrast</b><span>Increase contrast around controls and text.</span></div><button class="toggle" id="contrastToggle" onclick="toggleAccessibility('contrast')"><i></i></button></div><div class="settings-cardline"><div><b>Focus outlines</b><span>Make keyboard focus easier to see.</span></div><button class="toggle on" id="focusToggle" onclick="toggleAccessibility('focus')"><i></i></button></div><div class="settings-note">These accessibility preferences are saved on this device.</div></div><div class="settings-panel" id="settings-beta"><div class="beta-program" id="betaProgram"><div class="beta-program-top"><div><div class="small">NOVARA LABS</div><h3>Join the NOVARA Beta Program</h3><p>Enroll once to unlock experimental features before they become part of the normal NOVARA experience.</p></div><span class="beta-program-badge">🧪 BETA</span></div><button class="beta-enroll" id="betaEnrollBtn" onclick="toggleBetaProgram()">Enroll in program</button><div class="beta-program-status" id="betaProgramStatus">✓ You’re enrolled. Beta features are unlocked on this device.</div></div><div class="beta-head beta-gated"><div><b>Experimental features</b><span>These features are available because you joined the beta program.</span></div><span class="beta-pill">BETA</span></div><div class="settings-cardline beta-row beta-gated"><div><b>Enhanced Continue Watching</b><span>Use stricter playback-session validation.</span></div><button class="toggle" id="betaContinueToggle" onclick="toggleBeta('enhancedContinue')"><i></i></button></div><div class="settings-cardline beta-row beta-gated"><div><b>Cinema UI</b><span>Experimental immersive player presentation.</span></div><button class="toggle" id="betaCinemaToggle" onclick="toggleBeta('cinemaUI')"><i></i></button></div><div class="settings-cardline beta-row beta-gated"><div><b>Developer diagnostics</b><span>Show experimental playback diagnostics while testing.</span></div><button class="toggle" id="betaDebugToggle" onclick="toggleBeta('diagnostics')"><i></i></button></div><div class="settings-cardline beta-row beta-gated"><div><b>Smart catalog loading</b><span>Experimental faster catalog pagination and rendering.</span></div><button class="toggle on" id="betaSmartToggle" onclick="toggleBeta('smartCatalog')"><i></i></button></div><div class="settings-cardline beta-row beta-gated"><div><b>Quick play</b><span>Open titles with fewer interface transitions.</span></div><button class="toggle on" id="betaQuickToggle" onclick="toggleBeta('quickPlay')"><i></i></button></div><div class="settings-cardline beta-row beta-gated"><div><b>New card animations</b><span>Try the latest poster interaction effects.</span></div><button class="toggle on" id="betaCardsToggle" onclick="toggleBeta('newCards')"><i></i></button></div><div class="settings-cardline beta-row beta-gated"><div><b>Spoiler-free details</b><span>Hide plot descriptions and extra story information until you choose to reveal them.</span></div><button class="toggle" id="betaSpoilerToggle" onclick="toggleBeta('spoilerFree')"><i></i></button></div><div class="settings-cardline beta-row beta-gated"><div><b>Smart search</b><span>Prioritize exact title matches and relevant movie or show results.</span></div><button class="toggle on" id="betaSearchToggle" onclick="toggleBeta('smartSearch')"><i></i></button></div><div class="settings-cardline beta-row beta-gated"><div><b>Keyboard shortcuts</b><span>Use Space to play, Esc to close, and / to focus search.</span></div><button class="toggle on" id="betaKeysToggle" onclick="toggleBeta('keyboardShortcuts')"><i></i></button></div><div class="settings-cardline beta-row beta-gated"><div><b>Discover Mix</b><span>Add an experimental mixed catalog using movies, TV and anime together.</span></div><button class="toggle" id="betaMixToggle" onclick="toggleBeta('discoverMix')"><i></i></button></div></div><div class="settings-panel" id="settings-about"><div class="about-box"><div class="about-logo">✦</div><h2>NOVARA</h2><p>Movies, shows & anime in one cinematic interface.</p><div class="about-version">Version 3.1 • Beta-ready</div></div></div></section></div></div>
 
 <script>
 /* =========================
@@ -268,7 +353,18 @@ let TOKEN=TMDB_READ_ACCESS_TOKEN;
 let heroItems=[],heroIndex=0,current=null; let moviePage=0,providerFilter=null;
 let showEpisodes=[],showSeason=1,episodeSort='asc';
 const CONTINUE_KEY='novara_continue_watching';
-let playerStartedAt=0,lastPlayerEvent=0,continuePollTimer=null,continueSaveTimer=null;
+const CONTINUE_SCHEMA_KEY='novara_continue_schema';
+const NOVARA_CONTINUE_SCHEMA='3';
+let playerStartedAt=0,lastPlayerEvent=0,continuePollTimer=null,continueSaveTimer=null,playerActive=false;
+let playerSessionKey='';
+let betaFeatures={};
+const PERFORMANCE_KEY='novara_performance_mode';
+const LITE_IMAGES_KEY='novara_lite_images';
+const REDUCE_MOTION_KEY='novara_reduce_motion';
+function applyPerformanceSettings(){const perf=localStorage.getItem(PERFORMANCE_KEY)==='1',lite=localStorage.getItem(LITE_IMAGES_KEY)==='1',motion=localStorage.getItem(REDUCE_MOTION_KEY)==='1';document.body.classList.toggle('performance-mode',perf);document.body.classList.toggle('lite-images',lite||perf);document.body.classList.toggle('reduce-motion',motion||perf);$('performanceToggle')?.classList.toggle('on',perf);$('liteImagesToggle')?.classList.toggle('on',lite||perf);$('reduceMotionToggle')?.classList.toggle('on',motion||perf)}
+function togglePerformanceMode(){const on=localStorage.getItem(PERFORMANCE_KEY)==='1';localStorage.setItem(PERFORMANCE_KEY,on?'0':'1');applyPerformanceSettings();toast(on?'Performance mode disabled':'Performance mode enabled')}
+function togglePerformanceSetting(key){const map={liteImages:LITE_IMAGES_KEY,reduceMotion:REDUCE_MOTION_KEY};const k=map[key];if(!k)return;localStorage.setItem(k,localStorage.getItem(k)==='1'?'0':'1');applyPerformanceSettings()}
+
 const $=id=>document.getElementById(id);
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const img=(path,size='w500')=>path?IMG+size+path:'';
@@ -278,17 +374,18 @@ function poster(x){return x.poster_path?img(x.poster_path,'w500'):''}
 function backdrop(x){return x.backdrop_path?img(x.backdrop_path,'original'):poster(x)}
 function title(x){return x.title||x.name||x.original_title||x.original_name||'Untitled'}
 function year(x){return (x.release_date||x.first_air_date||'').slice(0,4)}
-function card(x,land=false){const n=title(x),type=x.media_type||(x.first_air_date?'tv':'movie');return `<article class="poster ${land?'land':''}" onclick='openDetails(${x.id},"${type}")'><img loading="lazy" src="${esc(poster(x))}" onerror="this.style.visibility='hidden'"><div class="pname">${esc(n)}</div><div class="sub">${year(x)||'—'} • ★ ${(x.vote_average||0).toFixed(1)}</div></article>`}
-async function init(){if(needToken()){setTimeout(()=>$('startup').classList.add('hide'),500);$('heroTitle').textContent='Add your TMDB token';$('heroDesc').textContent='Open the HTML code and set TMDB_READ_ACCESS_TOKEN to your TMDB API Read Access Token.';$('heroGenres').textContent='Real TMDB data • No generated artwork';return}try{await Promise.all([loadTrending(),loadMovies(),loadShows(),loadAnime(),loadProviders()]);renderMyList();const d=await api('/trending/all/day?language=en-US');heroItems=d.results.filter(x=>x.media_type==='movie'||x.media_type==='tv').slice(0,8);renderHero()}catch(e){console.error(e);$('heroTitle').textContent='TMDB could not be loaded';$('heroDesc').textContent='Check your token and browser connection.'}finally{setTimeout(()=>$('startup').classList.add('hide'),350)}}
+function card(x,land=false){const n=title(x),type=x.media_type||(x.first_air_date?'tv':'movie');return `<article class="poster ${land?'land':''}" tabindex="0" role="button" aria-label="Play ${esc(n)}" data-tmdb-id="${Number(x.id)||0}" data-media-type="${type}" onclick="openCard(this)"><img loading="lazy" src="${esc(poster(x))}" onerror="this.style.visibility='hidden'"><div class="pname">${esc(n)}</div><div class="sub">${year(x)||'—'} • ★ ${(x.vote_average||0).toFixed(1)}</div></article>`}
+async function init(){if(needToken()){setTimeout(()=>$('startup').classList.add('hide'),500);$('heroTitle').textContent='Add your TMDB token';$('heroDesc').textContent='Open the HTML code and set TMDB_READ_ACCESS_TOKEN to your TMDB API Read Access Token.';$('heroGenres').textContent='Real TMDB data • No generated artwork';return}try{applyPerformanceSettings(); await Promise.all([loadTrending(),loadMovies(),loadShows(),loadAnime(),loadProviders(),loadRecommended()]);renderMyList();const d=await api('/trending/all/day?language=en-US');heroItems=d.results.filter(x=>x.media_type==='movie'||x.media_type==='tv').slice(0,8);renderHero()}catch(e){console.error(e);$('heroTitle').textContent='TMDB could not be loaded';$('heroDesc').textContent='Check your token and browser connection.'}finally{setTimeout(()=>$('startup').classList.add('hide'),350)}}
 const DEFAULT_MOVIE_EMBED='https://cinesrc.st/embed/movie/{tmdb_id}';
 const DEFAULT_TV_EMBED='https://cinesrc.st/embed/tv/{tmdb_id}?s={season_number}&e={episode_number}';
 function buildEmbed(template,values){return String(template||'').replaceAll('{tmdb_id}',encodeURIComponent(values.id)).replaceAll('{season_number}',encodeURIComponent(values.season??'')).replaceAll('{episode_number}',encodeURIComponent(values.episode??''));}
 function movieEmbed(id,start=0){let u=buildEmbed(DEFAULT_MOVIE_EMBED,{id});return start>0?u+'?t='+encodeURIComponent(Math.floor(start))+'&continueprompt=false&autoplay=true&color=%23e50914':u+'?autoplay=true&color=%23e50914'}
 function tvEmbed(id,season,episode,start=0){let u=buildEmbed(DEFAULT_TV_EMBED,{id,season,episode});return u+(start>0?'&t='+encodeURIComponent(Math.floor(start))+'&continueprompt=false':'&autoplay=true')+'&color=%23e50914';}
-function getContinueWatching(){try{const raw=JSON.parse(localStorage.getItem(CONTINUE_KEY)||'{}');if(!raw||typeof raw!=='object'||Array.isArray(raw))return {};return raw}catch(e){return {}}}
-function saveContinueItem(item){if(!item?.key||!item?.id)return;const all=getContinueWatching();const duration=Math.max(0,Number(item.duration)||0);const currentTime=Math.max(0,Number(item.currentTime)||0);if(duration>0&&currentTime>=duration-3){delete all[item.key]}else{all[item.key]={...all[item.key],...item,currentTime,duration,updatedAt:Date.now()};}localStorage.setItem(CONTINUE_KEY,JSON.stringify(all));renderContinueWatching()}
+function getContinueWatching(){try{const raw=JSON.parse(localStorage.getItem(CONTINUE_KEY)||'{}');if(!raw||typeof raw!=='object'||Array.isArray(raw))return {};return Object.fromEntries(Object.entries(raw).filter(([k,v])=>v&&v.id&&v.key===k&&Number(v.currentTime)>0&&['movie','tv'].includes(v.type)));}catch(e){return {}}}
+function saveContinueItem(item){if(!playerActive||!item?.key||!item?.id||item.key!==playerSessionKey)return;const all=getContinueWatching(),duration=Math.max(0,Number(item.duration)||0),currentTime=Math.max(0,Number(item.currentTime)||0);if(currentTime<3)return;if(duration>0&&currentTime>=duration-5)delete all[item.key];else all[item.key]={...all[item.key],...item,currentTime,duration,updatedAt:Date.now()};localStorage.setItem(CONTINUE_KEY,JSON.stringify(all));renderContinueWatching()}
 function removeContinueItem(key){const all=getContinueWatching();delete all[key];localStorage.setItem(CONTINUE_KEY,JSON.stringify(all));renderContinueWatching()}
-function clearContinueWatching(){localStorage.removeItem(CONTINUE_KEY);renderContinueWatching()}
+function clearContinueWatching(){localStorage.removeItem(CONTINUE_KEY);renderContinueWatching();showToast('Continue Watching cleared')}
+function initializeContinueStorage(){const schema=localStorage.getItem(CONTINUE_SCHEMA_KEY);if(schema!==NOVARA_CONTINUE_SCHEMA){localStorage.removeItem(CONTINUE_KEY);localStorage.setItem(CONTINUE_SCHEMA_KEY,NOVARA_CONTINUE_SCHEMA)}}
 function continueKey(type,id,season,episode){return type==='tv'?`tv_${id}_${season}_${episode}`:`movie_${id}`}
 function renderContinueWatching(){
  const section=$('continueSection'),row=$('continueRow'); if(!section||!row)return;
@@ -342,7 +439,7 @@ function requestCinesrcState(){
 function handleCinesrcEvent(event){
  if(event.origin!=='https://cinesrc.st')return;
  const normalized=normalizeCinesrcMessage(event.data); if(!normalized)return;
- const type=normalized.type; const data=normalized.data;
+ const type=normalized.type; const eventType=type.replace(/^cinesrc:/,''); const data=normalized.data;
  if(!type)return;
  if(!current)return;
  if(type==='cinesrc:ready'){
@@ -365,9 +462,9 @@ function handleCinesrcEvent(event){
    const key=continueKey(mediaType,current.id,current._season,current._episode);
    removeContinueItem(key);
  }
- if(type==='cinesrc:nextepisode'||eventType==='nextepisode'||eventType==='cinesrc:nextepisode'){
+ if(type==='cinesrc:nextepisode'||eventType==='nextepisode'){
    const season=Number(data.season),episode=Number(data.episode);
-   if(Number.isFinite(season)&&Number.isFinite(episode)){current._season=season;current._episode=episode;saveContinueItem({key:continueKey('tv',current.id,season,episode),type:'tv',id:current.id,title:title(current),poster:poster(current),season,episode,currentTime:0,duration:0});}
+   if(Number.isFinite(season)&&Number.isFinite(episode)){current._season=season;current._episode=episode;playerSessionKey=continueKey('tv',current.id,season,episode);}
  }
  if(type==='cinesrc:skipintro'||eventType==='skipintro'||eventType==='cinesrc:skipintro'){
    // Cinesrc already performed the seek. NOVARA records the event without replacing the iframe.
@@ -377,22 +474,24 @@ function handleCinesrcEvent(event){
 window.addEventListener('message',handleCinesrcEvent);
 
 function openPlayer(url,label,tv=false){
- clearInterval(continuePollTimer);clearInterval(continueSaveTimer);window.__novaraCurrentTime=0;window.__novaraDuration=0;
+ clearInterval(continuePollTimer);clearInterval(continueSaveTimer);window.__novaraCurrentTime=0;window.__novaraDuration=0;playerActive=true;if(current){const mediaType=current.media_type||(current.first_air_date?'tv':'movie');playerSessionKey=current._continueKey||continueKey(mediaType,current.id,current._season,current._episode)}
  $('playerTitle').textContent=label||'Now Playing';
  const frame=$('playerFrame');
  frame.src=url||'about:blank';
  frame.setAttribute('allow','autoplay; fullscreen; picture-in-picture');
  $('player').classList.toggle('with-controls',tv);
  $('tvControls').classList.toggle('show',tv);
- $('player').classList.add('show');
+ $('player').classList.add('show','with-remote-focus');
  document.body.style.overflow='hidden';
+ setTimeout(remoteStartPlayerFocus,180);
  continuePollTimer=setInterval(requestCinesrcState,5000);
  continueSaveTimer=setInterval(()=>{if(Number.isFinite(window.__novaraCurrentTime)&&window.__novaraCurrentTime>0)saveCurrentProgress(window.__novaraCurrentTime,window.__novaraDuration)},5000);
  setTimeout(requestCinesrcState,2500);
 }
 function closePlayer(){
+ if(!playerActive)return;
  requestCinesrcState();
- setTimeout(()=>{clearInterval(continuePollTimer);clearInterval(continueSaveTimer);continuePollTimer=null;continueSaveTimer=null;$('playerFrame').src='about:blank';$('player').classList.remove('show','with-controls');$('tvControls').classList.remove('show');document.body.style.overflow='';},150);
+ setTimeout(()=>{clearInterval(continuePollTimer);clearInterval(continueSaveTimer);continuePollTimer=null;continueSaveTimer=null;$('playerFrame').src='about:blank';$('player').classList.remove('show','with-controls','with-remote-focus');$('tvControls').classList.remove('show');document.body.style.overflow='';},150);
 }
 async function playCurrent(){
   if(!current){alert('Select a movie or show first');return}
@@ -502,6 +601,10 @@ function playCurrentTrailer(){
  if(t)openTrailer(t.key,t.name);else alert('No trailer is available for this title.');
 }
 
+async function loadRecommended(){
+ if(needToken())return; const row=$('recommendedRow'); if(!row)return; row.innerHTML='<div class="empty-state">Building your recommendations…</div>';
+ try{const favs=getAIFavorites(); const requests=[]; favs.slice(0,3).forEach(f=>requests.push(api('/'+f.type+'/'+f.id+'/recommendations?language=en-US&page=1').catch(()=>({results:[]})))); requests.push(api('/trending/all/day?language=en-US').catch(()=>({results:[]}))); const sets=await Promise.all(requests); const map=new Map(); sets.forEach(d=>(d.results||[]).forEach(x=>{if(x.media_type!=='person'){const type=x.media_type||(x.first_air_date?'tv':'movie');const k=type+'-'+x.id;if(!map.has(k))map.set(k,{...x,media_type:type})}})); const picked=[...map.values()].filter(x=>!favs.some(f=>f.type===x.media_type&&Number(f.id)===Number(x.id))).sort((a,b)=>(b.vote_average||0)-(a.vote_average||0)).slice(0,14); row.innerHTML=picked.length?picked.map(x=>card(x)).join(''):'<div class="empty-state">Choose favorites in Settings → Beta to personalize this section.</div>'; }catch(e){console.error(e);row.innerHTML='<div class="empty-state">Could not load recommendations.</div>'}
+}
 async function loadTrending(){
  if(needToken())return;
  try{const d=await api('/trending/all/day?language=en-US');$('trending').innerHTML=(d.results||[]).filter(x=>x.media_type!=='person').slice(0,12).map(x=>card(x)).join('')||'<div class="empty-state">No trending titles found.</div>';}catch(e){console.error(e);$('trending').innerHTML='<div class="empty-state">Could not load trending titles.</div>'}
@@ -517,7 +620,7 @@ function filterByProvider(id,name){openProviderPage(id,name,null)}
 function providerColor(name){const n=String(name||'').toLowerCase();if(n.includes('netflix'))return '#e50914';if(n.includes('disney'))return '#113ccf';if(n.includes('max'))return '#5b2cff';if(n.includes('hulu'))return '#1ce783';if(n.includes('prime'))return '#00a8e1';if(n.includes('apple'))return '#ffffff';if(n.includes('peacock'))return '#f5c400';if(n.includes('paramount'))return '#0064ff';if(n.includes('youtube'))return '#ff0000';return '#e50914'}
 let providerPageState={id:null,name:'',logo:'',type:'movie'};
 async function openProviderPage(id,name,logo){if(needToken())return;providerPageState={id:Number(id),name:String(name||'Provider'),logo:logo||'',type:'movie'};const page=$('providerPage');document.documentElement.style.setProperty('--provider-color',providerColor(name));$('providerPageTitle').textContent=name;$('providerPageLogo').src=logo||'';$('providerPageLogo').style.display=logo?'block':'none';$('providerPageSub').textContent='Movies and shows available through '+name;page.classList.add('show');document.body.style.overflow='hidden';switchProviderTab('movie')}
-function closeProviderPage(){ $('providerPage').classList.remove('show'); document.body.style.overflow=''; document.documentElement.style.setProperty('--provider-color','#e50914'); }
+function closeProviderPage(){const page=$('providerPage');if(!page)return;page.classList.remove('show');document.body.style.overflow='';document.documentElement.style.setProperty('--provider-color','#e50914');}
 async function switchProviderTab(type){providerPageState.type=type;$('providerMoviesTab').classList.toggle('active',type==='movie');$('providerShowsTab').classList.toggle('active',type==='tv');$('providerMovieHeading').textContent=type==='movie'?'Popular Movies':'Popular TV Shows';$('providerMovieGrid').innerHTML='<div class="empty-state">Loading '+esc(providerPageState.name)+' '+(type==='movie'?'movies':'shows')+'...</div>';try{const endpoint=type==='movie'?`/discover/movie?language=en-US&include_adult=false&sort_by=popularity.desc&watch_region=${REGION}&with_watch_providers=${providerPageState.id}&page=1`:`/discover/tv?language=en-US&include_adult=false&sort_by=popularity.desc&watch_region=${REGION}&with_watch_providers=${providerPageState.id}&page=1`;const d=await api(endpoint);const items=(d.results||[]).map(x=>({...x,media_type:type}));$('providerMovieGrid').innerHTML=items.length?items.map(x=>card(x)).join(''):'<div class="empty-state">No '+(type==='movie'?'movies':'TV shows')+' found for this provider.</div>'}catch(e){console.error(e);$('providerMovieGrid').innerHTML='<div class="empty-state">Could not load this provider.</div>'}}
 function clearProviderFilter(){providerFilter=null;moviePage=0;$('movieHeading').textContent='All Movies';$('providerFilter').classList.remove('show');loadMovies(true)}
 async function loadShows(){
@@ -533,16 +636,20 @@ async function loadProviders(){
  try{
   const d=await api('/watch/providers/movie?language=en-US&watch_region='+REGION);
   $('providers').innerHTML=(d.results||[]).slice(0,18).map(p=>`
-  <div class="provider" title="${esc(p.provider_name)}" onclick="openProviderPage(${p.provider_id},'${esc(p.provider_name)}','${esc(img(p.logo_path,'w200'))}')">
+  <div class="provider" tabindex="0" role="button" aria-label="Open ${esc(p.provider_name)}" title="${esc(p.provider_name)}" onclick="openProviderPage(${p.provider_id},'${esc(p.provider_name)}','${esc(img(p.logo_path,'w200'))}')">
    <img class="provider-logo" loading="lazy" src="${esc(img(p.logo_path,'w200'))}" alt="${esc(p.provider_name)}">
    <div class="provider-name">${esc(p.provider_name)}</div>
   </div>`).join('')||'<div class="empty-state">No streaming providers found.</div>';
  }catch(e){console.error(e);$('providers').innerHTML='<div class="empty-state">Could not load providers.</div>'}
 }
+let detailRequestId=0;
+function openCard(el){const id=Number(el?.dataset?.tmdbId),type=el?.dataset?.mediaType==='tv'?'tv':'movie';if(Number.isFinite(id)&&id>0)openDetails(id,type)}
 async function openDetails(id,type='movie'){
- if(needToken())return;
+ id=Number(id); type=type==='tv'?'tv':'movie'; const requestId=++detailRequestId;
+ if(!Number.isFinite(id)||id<=0||needToken())return;
  try{
   const d=await api(`/${type}/${id}?language=en-US&append_to_response=credits,watch/providers,videos,recommendations`);
+  if(requestId!==detailRequestId)return;
   current={...d,media_type:type};
   $('hero').style.display='none';
   document.querySelector('main').style.display='none';
@@ -737,7 +844,20 @@ async function renderCollection(d,type){
  }catch(e){section.style.display='none';console.error('Collection load failed',e)}
 }
 
+
+/* Dedicated catalog pages + regular NOVARA AI */
+let dedicatedState={page:'home',pageNum:1,genre:''};
+function setNavActive(id){document.querySelectorAll('.navlinks [data-nav]').forEach(b=>b.classList.toggle('active',b.dataset.nav===id));}
+function openDedicatedPage(page){if(page==='home'){closeDedicatedPage();return} setNavActive(page);dedicatedState={page,pageNum:1,genre:''};$('dedicatedPage').classList.add('show');document.body.style.overflow='hidden';const names={movies:['MOVIES','Movies','The full movie catalog'],shows:['TV SHOWS','Shows','Popular series, trending TV and more'],anime:['ANIME','Anime','Japanese animation and anime series'],discover:['DISCOVER','Discover','Explore by genre, rating and popularity'],recommended:['FOR YOU','For You','Personalized picks based on your NOVARA activity'],list:['MY LIST','My List','Your saved movies and shows']};const n=names[page]||names.movies;$('dedicatedKicker').textContent=n[0];$('dedicatedTitle').textContent=n[1];$('dedicatedSub').textContent=n[2];buildDedicatedTools(page);loadDedicatedPage(true);}
+function closeDedicatedPage(){document.querySelectorAll('.navlinks [data-nav]').forEach(b=>b.classList.toggle('active',b.dataset.nav==='home'));$('dedicatedPage')?.classList.remove('show');document.body.style.overflow='';}
+function buildDedicatedTools(page){const t=$('dedicatedTools');if(!t)return;if(page==='discover'||page==='movies'||page==='shows'||page==='anime'){t.innerHTML='<select class="dedicated-filter" id="dedicatedGenre" onchange="dedicatedState.genre=this.value;loadDedicatedPage(true)"><option value="">All genres</option><option value="28">Action</option><option value="12">Adventure</option><option value="16">Animation</option><option value="35">Comedy</option><option value="27">Horror</option><option value="878">Sci-Fi</option><option value="53">Thriller</option><option value="18">Drama</option><option value="14">Fantasy</option></select><select class="dedicated-filter" id="dedicatedSort" onchange="loadDedicatedPage(true)"><option value="popularity.desc">Most popular</option><option value="vote_average.desc">Top rated</option><option value="primary_release_date.desc">Newest</option></select>'}else t.innerHTML='';}
+async function loadDedicatedPage(reset=true){if(needToken())return;if(reset){dedicatedState.pageNum=1;$('dedicatedGrid').innerHTML='<div class="empty-state">Loading...</div>'}const p=dedicatedState.page,g=dedicatedState.genre,sort=$('dedicatedSort')?.value||'popularity.desc';try{let endpoint='';if(p==='movies')endpoint=`/discover/movie?language=en-US&include_adult=false&sort_by=${sort}&region=${REGION}&page=${dedicatedState.pageNum}${g?'&with_genres='+g:''}`;else if(p==='shows')endpoint=`/discover/tv?language=en-US&sort_by=${sort}&page=${dedicatedState.pageNum}${g?'&with_genres='+g:''}`;else if(p==='anime')endpoint=`/discover/tv?language=en-US&sort_by=${sort}&with_genres=16&with_origin_country=JP&page=${dedicatedState.pageNum}${g?'&with_genres=16,'+g:''}`;else if(p==='discover')endpoint=`/discover/movie?language=en-US&include_adult=false&sort_by=${sort}&region=${REGION}&page=${dedicatedState.pageNum}${g?'&with_genres='+g:''}`;else if(p==='recommended'){const d=await api('/trending/all/day?language=en-US');const fav=getAIFavorites();let arr=(d.results||[]).filter(x=>x.media_type==='movie'||x.media_type==='tv');if(fav.length){const sets=await Promise.all(fav.map(f=>api('/'+f.type+'/'+f.id+'/recommendations?language=en-US&page=1').catch(()=>({results:[]}))));const m=new Map();sets.forEach(z=>(z.results||[]).forEach(x=>m.set((x.media_type||'movie')+'-'+x.id,{...x,media_type:x.media_type||'movie'})));arr=[...m.values(),...arr]}$('dedicatedGrid').innerHTML=arr.filter(x=>x.poster_path).slice(0,40).map(x=>card(x)).join('')||'<div class="empty-state">Choose favorites to personalize For You.</div>';return}else if(p==='list'){const list=JSON.parse(localStorage.getItem('novara_list')||'[]');$('dedicatedGrid').innerHTML=list.length?list.map(x=>card(x)).join(''):'<div class="empty-state">Your My List is empty.</div>';return}const d=await api(endpoint);const items=(d.results||[]).map(x=>({...x,media_type:p==='shows'||p==='anime'?'tv':'movie'}));const grid=$('dedicatedGrid');if(reset)grid.innerHTML='';grid.insertAdjacentHTML('beforeend',items.map(x=>card(x)).join('')||'<div class="empty-state">No titles found.</div>');$('dedicatedMore').style.display=(d.page<d.total_pages&&d.page<500)?'block':'none';}catch(e){console.error(e);$('dedicatedGrid').innerHTML='<div class="empty-state">Could not load this catalog.</div>'}}
+function loadDedicatedMore(){dedicatedState.pageNum++;loadDedicatedPage(false)}
+function refreshDedicatedPage(){loadDedicatedPage(true)}
+function randomDedicatedTitle(){const cards=[...document.querySelectorAll('#dedicatedGrid .poster')];if(!cards.length)return;cards[Math.floor(Math.random()*cards.length)].click()}
+async function runMainAI(){const key=($('mainAIKey')?.value||localStorage.getItem('novara_openrouter_key')||'').trim(),prefs=($('mainAIPrefs')?.value||localStorage.getItem('novara_ai_personality')||'').trim();if(!key){$('mainAIStatus').textContent='Add your OpenRouter key in Settings → AI & Personalization.';return}localStorage.setItem('novara_openrouter_key',key);localStorage.setItem('novara_ai_personality',prefs);$('mainAIStatus').textContent='NOVARA AI is finding real TMDB titles...';try{const d=await api('/trending/all/day?language=en-US');const candidates=(d.results||[]).filter(x=>x.media_type==='movie'||x.media_type==='tv').slice(0,30);const prompt=`Recommend up to 12 titles from ONLY this JSON list. User taste: ${prefs||'general popular entertainment'}. Return JSON only: {"ids":[{"id":123,"type":"movie"}]}. Candidates: ${JSON.stringify(candidates.map(x=>({id:x.id,type:x.media_type,title:title(x),overview:x.overview||''})))}`;const r=await fetch('https://openrouter.ai/api/v1/chat/completions',{method:'POST',headers:{Authorization:'Bearer '+key,'Content-Type':'application/json','X-OpenRouter-Title':'NOVARA'},body:JSON.stringify({model:'openrouter/auto',messages:[{role:'user',content:prompt}],temperature:.2,max_tokens:600})});const j=await r.json();if(!r.ok)throw Error(j?.error?.message||'AI request failed');let txt=(j.choices?.[0]?.message?.content||'').replace(/^```json/i,'').replace(/```$/,'').trim();const parsed=JSON.parse(txt),map=new Map(candidates.map(x=>[x.media_type+'-'+x.id,x]));const picks=(parsed.ids||[]).map(x=>map.get((x.type||'movie')+'-'+Number(x.id))).filter(Boolean);$('mainAIRow').innerHTML=picks.map(x=>card(x)).join('')||'<div class="empty-state">No recommendations returned.</div>';$('mainAIStatus').textContent=`${picks.length} AI recommendations ready.`}catch(e){console.error(e);$('mainAIStatus').textContent='AI could not generate recommendations. Check your key and try again.'}}
 function closeDetails(){
+ detailRequestId++;
  if(location.hash)history.replaceState(null,'',location.pathname+location.search);
  $('detailView').classList.remove('show');
  document.querySelector('main').style.display='';
@@ -764,9 +884,13 @@ function renderHero(){
 setInterval(()=>{if(heroItems.length){heroIndex=(heroIndex+1)%heroItems.length;renderHero()}},7000);
 
 let searchTimer;
-function openSearchPage(q=''){if(needToken())return;const page=$('searchPage');page.classList.add('show');document.body.style.overflow='hidden';$('searchPageInput').value=q;$('searchPageInput').focus();if(q.trim())searchPageTMDB(q);else $('searchPageGrid').innerHTML='<div class="empty-state">Start typing to search movies and TV shows.</div>'}
+const TV_KEYBOARD_ROWS=[['1','2','3','4','5','6','7','8','9','0'],['Q','W','E','R','T','Y','U','I','O','P'],['A','S','D','F','G','H','J','K','L','-'],['Z','X','C','V','B','N','M','.'],['SPACE','BACKSPACE','CLEAR','SEARCH']];
+function renderTVKeyboard(){const box=$('tvKeyboard');if(!box)return;box.innerHTML=TV_KEYBOARD_ROWS.flat().map(k=>{const cls=k==='SPACE'?'tv-key space':(k.length>1?'tv-key wide':'tv-key');return `<button class="${cls}" tabindex="0" data-key="${esc(k)}" onclick="tvKeyboardPress('${esc(k)}')">${k==='BACKSPACE'?'⌫':k==='SPACE'?'Space':k==='CLEAR'?'Clear':k==='SEARCH'?'Search':esc(k)}</button>`}).join('');box.querySelector('.tv-key')?.setAttribute('data-remote-start','1');}
+function tvKeyboardPress(key){const input=$('searchPageInput');if(!input)return;if(key==='BACKSPACE')input.value=input.value.slice(0,-1);else if(key==='CLEAR')input.value='';else if(key==='SPACE')input.value+=' ';else if(key==='SEARCH'){searchPageTMDB(input.value);return}else input.value+=key;input.dispatchEvent(new Event('input',{bubbles:true}));}
+function openSearchPage(q=''){if(needToken())return;const page=$('searchPage');page.classList.add('show');document.body.style.overflow='hidden';$('searchPageInput').value=q;renderTVKeyboard();if(q.trim())searchPageTMDB(q);else $('searchPageGrid').innerHTML='<div class="empty-state">Use the TV keyboard to search movies and TV shows.</div>';setTimeout(()=>{const k=$('tvKeyboard')?.querySelector('.tv-key');if(k)setRemoteFocus(k,false);},80)}
 function closeSearchPage(){$('searchPage').classList.remove('show');document.body.style.overflow='';$('search').value=''}
-async function searchPageTMDB(q){clearTimeout(searchTimer);q=q.trim();$('searchPageHeading').textContent=q?'Results for “'+q.replace(/"/g,'')+'”':'Search Results';if(!q){$('searchPageGrid').innerHTML='<div class="empty-state">Start typing to search movies and TV shows.</div>';return}$('searchPageGrid').innerHTML='<div class="empty-state">Searching...</div>';searchTimer=setTimeout(async()=>{if(needToken())return;try{const d=await api('/search/multi?query='+encodeURIComponent(q)+'&include_adult=false&language=en-US&page=1');const results=(d.results||[]).filter(x=>x.media_type==='movie'||x.media_type==='tv').slice(0,60);$('searchPageGrid').innerHTML=results.length?results.map(x=>card(x)).join(''):'<div class="empty-state">No movies or shows matched that search.</div>'}catch(e){console.error(e);$('searchPageGrid').innerHTML='<div class="empty-state">Search failed. Check your connection or TMDB token.</div>'}},250)}
+let searchRequestId=0;
+async function searchPageTMDB(q){clearTimeout(searchTimer);q=q.trim();const requestId=++searchRequestId;$('searchPageHeading').textContent=q?'Results for “'+q.replace(/"/g,'')+'”':'Search Results';if(!q){$('searchPageGrid').innerHTML='<div class="empty-state">Start typing to search movies and TV shows.</div>';return}$('searchPageGrid').innerHTML='<div class="empty-state">Searching...</div>';searchTimer=setTimeout(async()=>{if(needToken())return;try{const d=await api('/search/multi?query='+encodeURIComponent(q)+'&include_adult=false&language=en-US&page=1');if(requestId!==searchRequestId)return;const results=(d.results||[]).filter(x=>x.media_type==='movie'||x.media_type==='tv').slice(0,60);$('searchPageGrid').innerHTML=results.length?results.map(x=>card(x)).join(''):'<div class="empty-state">No movies or shows matched that search.</div>'}catch(e){if(requestId!==searchRequestId)return;console.error(e);$('searchPageGrid').innerHTML='<div class="empty-state">Search failed. Check your connection or TMDB token.</div>'}},250)}
 function searchTMDB(q){q=q.trim();if(q)openSearchPage(q);else closeSearchPage()}
 function addCurrent(){
  if(!current)return;
@@ -786,12 +910,314 @@ function clearMyList(){
  renderMyList();
 }
 function openCurrent(){if(current)openDetails(current.id,current.media_type||'movie')}
-function go(id){$(id)?.scrollIntoView({behavior:'smooth',block:'start'})}
-function home(){scrollTo({top:0,behavior:'smooth'})}
+function go(id){
+ const dedicated=['movies','shows','anime','discover','recommended','list'];
+ if(dedicated.includes(id)){openDedicatedPage(id);return}
+ $(id)?.scrollIntoView({behavior:'smooth',block:'start'});
+}
+function home(){closeDedicatedPage();$('detailView')?.classList.remove('show');document.querySelector('main').style.display='';$('hero').style.display='';document.body.classList.remove('detail-open');setNavActive('home');scrollTo({top:0,behavior:'smooth'})}
 function setTheme(theme){const allowed=['midnight','purple','blue','red','emerald'];if(!allowed.includes(theme))theme='midnight';document.body.dataset.theme=theme;localStorage.setItem('novara_theme',theme);const sel=$('themeSelect');if(sel)sel.value=theme}
-function openSettings(){$('settings').classList.add('show')}
+const SETTINGS_TITLES={performance:'Performance',appearance:'Appearance',interface:'Interface',playback:'Playback',accessibility:'Accessibility',continue:'Continue Watching',beta:'Beta',about:'About'};
+const BETA_PROGRAM_KEY='novara_beta_program';
+function isBetaEnrolled(){return localStorage.getItem(BETA_PROGRAM_KEY)==='1'}
+function loadBetaFeatures(){try{betaFeatures=JSON.parse(localStorage.getItem('novara_beta_features')||'{}')||{}}catch(e){betaFeatures={}};updateBetaProgramUI()}
+function saveBetaFeatures(){localStorage.setItem('novara_beta_features',JSON.stringify(betaFeatures));updateBetaUI()}
+function updateBetaUI(){
+ [['enhancedContinue','betaContinueToggle'],['cinemaUI','betaCinemaToggle'],['diagnostics','betaDebugToggle'],['smartCatalog','betaSmartToggle'],['quickPlay','betaQuickToggle'],['newCards','betaCardsToggle'],['spoilerFree','betaSpoilerToggle'],['smartSearch','betaSearchToggle'],['keyboardShortcuts','betaKeysToggle'],['discoverMix','betaMixToggle']].forEach(([k,id])=>$(id)?.classList.toggle('on',!!betaFeatures[k]));
+ document.body.classList.toggle('beta-spoiler-free',isBetaEnrolled()&&!!betaFeatures.spoilerFree);
+}
+function updateBetaProgramUI(){const enrolled=isBetaEnrolled(),card=$('betaProgram'),btn=$('betaEnrollBtn');if(card)card.classList.toggle('enrolled',enrolled);if(btn)btn.textContent=enrolled?'Leave beta program':'Enroll in program';document.querySelectorAll('.beta-gated').forEach(el=>el.style.display=enrolled?(el.classList.contains('beta-ai-box')?'block':'flex'):'none');updateBetaUI()}
+function toggleBetaProgram(){const enrolled=isBetaEnrolled();if(enrolled){if(!confirm('Leave the NOVARA Beta Program? Your beta settings will be turned off.'))return;localStorage.removeItem(BETA_PROGRAM_KEY);betaFeatures={};localStorage.removeItem('novara_beta_features');showToast('You left the beta program')}else{localStorage.setItem(BETA_PROGRAM_KEY,'1');betaFeatures={enhancedContinue:true,cinemaUI:true,diagnostics:false,smartCatalog:true,quickPlay:true,newCards:true,spoilerFree:false,smartSearch:true,keyboardShortcuts:true,discoverMix:false};localStorage.setItem('novara_beta_features',JSON.stringify(betaFeatures));showToast('Welcome to the NOVARA Beta Program!')}updateBetaProgramUI()}
+function toggleBeta(key){if(!isBetaEnrolled()){showToast('Enroll in the beta program first');return}betaFeatures[key]=!betaFeatures[key];saveBetaFeatures();showToast(betaFeatures[key]?'Beta feature enabled':'Beta feature disabled')}
+function toggleSetting(key){const id=key+'Toggle',el=$(id);el?.classList.toggle('on');localStorage.setItem('novara_'+key,el?.classList.contains('on')?'1':'0')}
+function toggleAIKey(){const el=$('openrouterKey'),btn=document.querySelector('.ai-show');if(!el)return;const show=el.type==='password';el.type=show?'text':'password';if(btn)btn.textContent=show?'Hide':'Show'}
+function aiAddText(id,text){const el=$(id);if(!el)return;const current=el.value.trim();const parts=current?current.split(',').map(x=>x.trim()).filter(Boolean):[];if(!parts.some(x=>x.toLowerCase()===text.toLowerCase()))parts.push(text);el.value=parts.join(', ');el.focus()}
+function loadAISettings(){if($('openrouterKey'))$('openrouterKey').value=localStorage.getItem('novara_openrouter_key')||'';if($('aiPersonality'))$('aiPersonality').value=localStorage.getItem('novara_ai_personality')||'';if($('aiLikes'))$('aiLikes').value=localStorage.getItem('novara_ai_likes')||getAIFavorites().map(x=>x.title).join(', ');if($('openrouterModel'))$('openrouterModel').value=localStorage.getItem('novara_openrouter_model')||'openrouter/auto'}
+function saveAISettings(){localStorage.setItem('novara_openrouter_key',$('openrouterKey')?.value.trim()||'');localStorage.setItem('novara_ai_personality',$('aiPersonality')?.value.trim()||'');localStorage.setItem('novara_ai_likes',$('aiLikes')?.value.trim()||'');localStorage.setItem('novara_openrouter_model',$('openrouterModel')?.value||'openrouter/auto')}
+function aiStatus(t,err=false){const el=$('aiRecStatus');if(el){el.textContent=t;el.style.color=err?'#ff8d96':''}}
+async function getAICandidates(){const favs=getAIFavorites();const base=[api('/movie/popular?language=en-US&page=1'),api('/movie/top_rated?language=en-US&page=1'),api('/trending/movie/day?language=en-US'),api('/tv/popular?language=en-US&page=1')];favs.forEach(f=>base.push(api('/'+f.type+'/'+f.id+'/recommendations?language=en-US&page=1').catch(()=>({results:[]}))));const sets=await Promise.all(base);const map=new Map();sets.forEach(d=>(d.results||[]).forEach(x=>{const type=x.media_type||(x.first_air_date?'tv':'movie');const k=type+'-'+x.id;if(!map.has(k))map.set(k,{id:x.id,type,title:title(x),overview:x.overview||'',year:year(x),rating:x.vote_average||0,poster:x.poster_path||''})}));return [...map.values()].slice(0,80)}
+function renderAIResults(items){const el=$('aiRecResults');if(!el)return;if(!items.length){el.innerHTML='<div class="settings-note">The AI did not return matching recommendations. Try adding more favorite movies.</div>';return}el.innerHTML=items.slice(0,9).map(x=>{const posterUrl=x.poster?img(x.poster,'w185'):'';return `<div class="ai-result" onclick='openDetails(${Number(x.id)},"${esc(x.type)}")'><img src="${esc(posterUrl)}" onerror="this.style.visibility='hidden'"><div><b>${esc(x.title)}</b><small>${esc(x.year||'')} • ★ ${Number(x.rating||0).toFixed(1)}</small><span class="ai-score">AI MATCH ${Math.round(Number(x.score||0))}%</span><p>${esc(x.reason||x.overview||'Recommended for you.')}</p></div></div>`}).join('')}
+async function runAIRecommendations(){const key=$('openrouterKey')?.value.trim(),personality=$('aiPersonality')?.value.trim(),likes=$('aiLikes')?.value.trim(),model=$('openrouterModel')?.value||'openrouter/auto';if(!key){aiStatus('Enter your OpenRouter API key first.',true);return}if(!personality&&!likes){aiStatus('Tell the AI something about your personality or movies you like.',true);return}saveAISettings();aiStatus('Finding real TMDB candidates and asking the AI to rank them...');$('aiRecResults').innerHTML='';try{const candidates=await getAICandidates();const prompt=`You are NOVARA's movie recommendation engine. Rank ONLY the supplied TMDB candidates. Do not invent movies or IDs. User personality: ${personality||'Not provided'}. Favorite movies/shows selected in NOVARA: ${JSON.stringify(getAIFavorites())}. Movies they like: ${likes||'Not provided'}. Return ONLY valid JSON: {"recommendations":[{"id":123,"type":"movie","score":94,"reason":"short reason"}]} with up to 9 recommendations. Candidate list: ${JSON.stringify(candidates.map(x=>({id:x.id,type:x.type,title:x.title,year:x.year,rating:x.rating,overview:x.overview})))}`;const r=await fetch('https://openrouter.ai/api/v1/chat/completions',{method:'POST',headers:{'Authorization':'Bearer '+key,'Content-Type':'application/json','X-OpenRouter-Title':'NOVARA'},body:JSON.stringify({model,messages:[{role:'system',content:'You recommend movies accurately and follow JSON-only output.'},{role:'user',content:prompt}],temperature:.35,max_tokens:1200})});const data=await r.json();if(!r.ok)throw new Error(data?.error?.message||'OpenRouter request failed');let text=data?.choices?.[0]?.message?.content||'';text=text.replace(/^```json\s*/i,'').replace(/```$/,'').trim();const parsed=JSON.parse(text);const byKey=new Map(candidates.map(x=>[x.type+'-'+x.id,x]));const recs=(parsed.recommendations||[]).map(x=>{const c=byKey.get(String(x.type||'movie')+'-'+Number(x.id));return c?{...c,score:x.score,reason:x.reason}:null}).filter(Boolean);renderAIResults(recs);aiStatus(recs.length?`Found ${recs.length} recommendations using ${data.model||model}.`:'No matches returned.');}catch(e){console.error(e);aiStatus('AI recommendation failed: '+e.message,true)}}
+const AI_FAVORITES_KEY='novara_ai_favorites';
+const AI_ONBOARD_KEY='novara_ai_onboarded_at';
+const AI_MONTH_MS=30*24*60*60*1000;
+let aiFavoriteChoices=[]; let aiSearchTimer=null;
+function getAIFavorites(){try{return JSON.parse(localStorage.getItem(AI_FAVORITES_KEY)||'[]')}catch{return[]}}
+function renderAIFavoriteChoices(){const selected=$('aiSelectedFavorites'),results=$('aiFavoriteResults'),status=$('aiFavoriteStatus'),finish=$('aiFinishBtn');if(selected)selected.innerHTML=aiFavoriteChoices.map((x,i)=>`<div class="ai-selected-card"><button class="ai-remove" onclick="removeAIFavorite(${i})">×</button><img src="${esc(x.poster?img(x.poster,'w185'):'')}" onerror="this.style.visibility='hidden'"><span>${esc(x.title)}</span></div>`).join('');if(status)status.textContent=aiFavoriteChoices.length>=3?'3 favorites selected — you are ready!':`Choose ${3-aiFavoriteChoices.length} more favorite${aiFavoriteChoices.length===2?'':'s'}`;if(finish)finish.disabled=aiFavoriteChoices.length!==3;if(results)results.querySelectorAll('.ai-pick').forEach(el=>el.classList.toggle('selected',aiFavoriteChoices.some(x=>x.type+'-'+x.id===el.dataset.key)));}
+function openAIOnboarding(){aiFavoriteChoices=getAIFavorites().slice(0,3);if($('aiOnboardKey'))$('aiOnboardKey').value=localStorage.getItem('novara_openrouter_key')||'';renderAIFavoriteChoices();$('aiOnboarding')?.classList.add('show');setTimeout(()=>$('aiFavoriteSearch')?.focus(),50)}
+function closeAIOnboarding(){$('aiOnboarding')?.classList.remove('show')}
+function skipAIOnboarding(){localStorage.setItem(AI_ONBOARD_KEY,String(Date.now()));closeAIOnboarding()}
+function removeAIFavorite(i){aiFavoriteChoices.splice(i,1);renderAIFavoriteChoices()}
+function addAIFavorite(x){if(aiFavoriteChoices.some(y=>y.type+'-'+y.id===x.type+'-'+x.id))return;if(aiFavoriteChoices.length>=3){aiStatus('You can choose exactly 3 favorites.');return}aiFavoriteChoices.push(x);renderAIFavoriteChoices()}
+async function searchAIFavorites(q){clearTimeout(aiSearchTimer);const results=$('aiFavoriteResults');if(!results)return;if(!q.trim()){results.innerHTML='';return}results.innerHTML='<div class="settings-note">Searching…</div>';aiSearchTimer=setTimeout(async()=>{try{const d=await api('/search/multi?query='+encodeURIComponent(q.trim())+'&include_adult=false&language=en-US&page=1');const items=(d.results||[]).filter(x=>x.media_type==='movie'||x.media_type==='tv').slice(0,12);results.innerHTML=items.length?items.map(x=>{const type=x.media_type;const key=type+'-'+x.id;return `<button class="ai-pick ${aiFavoriteChoices.some(y=>y.type+'-'+y.id===key)?'selected':''}" data-key="${key}" onclick='addAIFavorite(${JSON.stringify({id:x.id,type,title:title(x),year:year(x),poster:x.poster_path||''})})'><img src="${esc(x.poster_path?img(x.poster_path,'w185'):'')}" onerror="this.style.visibility='hidden'"><span><b>${esc(title(x))}</b><small>${type==='tv'?'TV Show':'Movie'}${year(x)?' • '+esc(year(x)):''}</small></span></button>`}).join(''):'<div class="settings-note">No movies or shows found.</div>';renderAIFavoriteChoices()}catch(e){results.innerHTML='<div class="settings-note">Search failed. Try again.</div>'}},250)}
+function finishAIOnboarding(){if(aiFavoriteChoices.length!==3)return;localStorage.setItem(AI_FAVORITES_KEY,JSON.stringify(aiFavoriteChoices));localStorage.setItem(AI_ONBOARD_KEY,String(Date.now()));const k=$('aiOnboardKey')?.value.trim();if(k)localStorage.setItem('novara_openrouter_key',k);closeAIOnboarding();renderAIFavoritesSettings();if(k)runAIRecommendations(true);else aiStatus('3 favorites saved. Add your OpenRouter key in Settings → Beta to get AI recommendations.')}
+const DEVICE_KEY='novara_device_mode';
+function applyDeviceMode(mode){document.body.classList.toggle('device-mobile-mode',mode==='mobile');if($('deviceMobileBar'))$('deviceMobileBar').style.display=mode==='mobile'?'block':'none'}
+function chooseDevice(mode){if(mode==='auto')mode=window.matchMedia('(max-width: 700px)').matches?'mobile':'pc';localStorage.setItem(DEVICE_KEY,mode);applyDeviceMode(mode);$('deviceChoice')?.classList.remove('show')}
+function openDeviceChoice(){$('deviceChoice')?.classList.add('show')}
+function maybeShowDeviceChoice(){const saved=localStorage.getItem(DEVICE_KEY);if(saved)applyDeviceMode(saved);else setTimeout(()=>openDeviceChoice(),650)}
+function maybeShowAIOnboarding(){const ts=Number(localStorage.getItem(AI_ONBOARD_KEY)||0);if(!ts||Date.now()-ts>=AI_MONTH_MS)openAIOnboarding()}
+function renderAIFavoritesSettings(){const el=$('aiLikes');if(el){const fav=getAIFavorites();el.value=fav.map(x=>x.title).join(', ')}}
+const PROFILE_KEY='novara_profile_v1';
+const PROFILES_KEY='novara_profiles_v2';
+const ACTIVE_PROFILE_KEY='novara_active_profile_v2';
+const PFP_OPTIONS=['🌌','🦊','🐼','🐸','👾','🤖','😎','🦖','🐱','⚡','🔥','🎮'];
+let profileManageMode=false;
+function getProfile(){try{return JSON.parse(localStorage.getItem(PROFILE_KEY)||'{}')||{}}catch(e){return {}}}
+function getProfiles(){try{return JSON.parse(localStorage.getItem(PROFILES_KEY)||'[]')||[]}catch(e){return []}}
+function activeProfileId(){return localStorage.getItem(ACTIVE_PROFILE_KEY)||''}
+function migrateProfiles(){
+ let ps=getProfiles();
+ if(!ps.length){const old=getProfile();if(old.name&&old.name!=='Guest'){ps=[{id:'p_'+Date.now(),name:old.name,bio:old.bio||'',avatar:old.avatar||'🌌'}];localStorage.setItem(PROFILES_KEY,JSON.stringify(ps));localStorage.setItem(ACTIVE_PROFILE_KEY,ps[0].id)}}
+ return ps;
+}
+function profileAvatarMarkup(p,manage=false){
+ const a=p.avatar||'🌌';
+ return `<button class="gate-profile ${manage?'manage-mode':''}" onclick="${manage?`editGateProfile('${p.id}')`:`selectProfile('${p.id}')`}"><span class="gate-avatar"><span class="avatar-art">${a}</span>${manage?'<span class="avatar-edit">✎</span>':''}</span><span class="gate-name">${esc(p.name||'Profile')}</span></button>`;
+}
+function renderGateRecent(){
+ const el=$('gateRecent');if(!el)return;
+ let cw={};try{cw=JSON.parse(localStorage.getItem(CONTINUE_KEY)||'{}')||{}}catch(e){}
+ const items=Object.values(cw).filter(x=>x&&x.id).sort((a,b)=>(Number(b.updatedAt||b.lastUpdated||0)-Number(a.updatedAt||a.lastUpdated||0))).slice(0,6);
+ if(!items.length){el.innerHTML='';return}
+ el.innerHTML=`<div class="recent-title">Recently Watched</div><div class="recent-row">${items.map(x=>`<div class="recent-mini"><img src="${esc(poster(x))}" onerror="this.style.visibility='hidden'" alt=""><div>${esc(title(x))}</div></div>`).join('')}</div>`;
+}
+function renderProfileGate(){
+ const gate=$('profileGate');if(!gate)return;
+ const ps=migrateProfiles();const hasProfiles=ps.length>0;
+ profileManageMode=false;
+ $('gateKicker').textContent=hasProfiles?'WELCOME BACK':'WELCOME TO NOVARA';
+ $('gateTitle').textContent=hasProfiles?"Who's watching?":'Create your profile';
+ $('gateSub').textContent=hasProfiles?'Choose a profile to continue.':'Create a profile to personalize your NOVARA experience.';
+ $('manageProfilesBtn').style.display=hasProfiles?'block':'none';
+ $('gateProfiles').innerHTML=ps.map(p=>profileAvatarMarkup(p)).join('');
+ $('gateAdd').style.display='block';
+ $('gateAdd').innerHTML='<span>＋</span><b>Add Profile</b>';
+ renderGateRecent();
+ gate.classList.add('show');document.body.style.overflow='hidden';setTimeout(remoteStartFocus,40);
+}
+function toggleManageProfiles(){
+ const ps=migrateProfiles(); if(!ps.length)return startCreateProfile();
+ profileManageMode=!profileManageMode;
+ $('gateKicker').textContent=profileManageMode?'MANAGE PROFILES':'WELCOME BACK';
+ $('gateTitle').textContent=profileManageMode?'Manage profiles':"Who's watching?";
+ $('gateSub').textContent=profileManageMode?'Select a profile to edit it.':'Choose a profile to continue.';
+ $('gateProfiles').innerHTML=ps.map(p=>profileAvatarMarkup(p,profileManageMode)).join('');
+ $('gateAdd').style.display='block';
+ $('gateAdd').innerHTML='<span>＋</span><b>Add Profile</b>';setTimeout(remoteStartFocus,30);
+}
+function selectProfile(id){const p=migrateProfiles().find(x=>x.id===id);if(!p)return;localStorage.setItem(ACTIVE_PROFILE_KEY,id);localStorage.setItem(PROFILE_KEY,JSON.stringify(p));loadProfileUI();$('profileGate').classList.remove('show');document.body.style.overflow='';if(remoteFocusEl)remoteFocusEl.classList.remove('remote-focus');remoteFocusEl=null;showToast('Welcome back, '+p.name);}
+function editGateProfile(id){
+ const p=migrateProfiles().find(x=>x.id===id);if(!p)return;
+ const gate=$('profileGate');$('gateKicker').textContent='EDIT PROFILE';$('gateTitle').textContent='Edit profile';$('gateSub').textContent='Update your NOVARA profile.';
+ $('gateProfiles').innerHTML=`<div class="gate-create"><div class="gate-create-head"><div class="profile-avatar" id="gateAvatarPreview">${p.avatar||'🌌'}</div><h2>${esc(p.name||'Profile')}</h2><p>Make changes to this profile.</p></div><div class="profile-fields"><label>Profile name<input id="gateName" maxlength="20" value="${esc(p.name||'')}" autocomplete="off"></label><label>Bio <span style="opacity:.6">(optional)</span><input id="gateBio" maxlength="80" value="${esc(p.bio||'')}" autocomplete="off"></label></div><div class="profile-section-title">Choose an avatar</div><div class="pfp-grid" id="gatePFPGrid">${PFP_OPTIONS.map(x=>`<button class="pfp-choice ${x===(p.avatar||'🌌')?'selected':''}" onclick="selectGatePFP(this,'${x}')">${x}</button>`).join('')}</div><div class="gate-create-actions"><button class="gate-cancel" onclick="renderProfileGate()">Back</button><button class="gate-delete" onclick="deleteProfile('${p.id}')">Delete</button><button class="gate-save" onclick="saveGateProfile('${p.id}')">Save changes</button></div></div>`;
+ $('gateAdd').style.display='none';setTimeout(remoteStartFocus,30);
+}
+function startCreateProfile(){
+ const gate=$('profileGate');$('gateKicker').textContent='NEW PROFILE';$('gateTitle').textContent='Create a profile';$('gateSub').textContent='Pick a name and avatar for your NOVARA profile.';
+ $('gateProfiles').innerHTML=`<div class="gate-create"><div class="gate-create-head"><div class="profile-avatar" id="gateAvatarPreview">🌌</div><h2>New profile</h2><p>Make NOVARA yours.</p></div><div class="profile-fields"><label>Profile name<input id="gateName" maxlength="20" placeholder="Your name" autocomplete="off"></label><label>Bio <span style="opacity:.6">(optional)</span><input id="gateBio" maxlength="80" placeholder="A little about you" autocomplete="off"></label></div><div class="profile-section-title">Choose an avatar</div><div class="pfp-grid" id="gatePFPGrid">${PFP_OPTIONS.map((x,i)=>`<button class="pfp-choice ${i===0?'selected':''}" onclick="selectGatePFP(this,'${x}')">${x}</button>`).join('')}</div><div class="gate-create-actions"><button class="gate-cancel" onclick="renderProfileGate()">Back</button><button class="gate-save" onclick="createProfile()">Create profile</button></div></div>`;
+ $('gateAdd').style.display='none';
+}
+function saveGateProfile(id){
+ const name=$('gateName')?.value.trim();if(!name){$('gateName')?.focus();return showToast('Enter a profile name');}
+ const ps=migrateProfiles();const old=ps.find(x=>x.id===id);if(!old)return;
+ const p={...old,name,bio:$('gateBio')?.value.trim()||'',avatar:$('gateAvatarPreview')?.dataset.avatar||$('gateAvatarPreview')?.textContent||'🌌'};
+ const next=ps.map(x=>x.id===id?p:x);localStorage.setItem(PROFILES_KEY,JSON.stringify(next));
+ if(activeProfileId()===id)localStorage.setItem(PROFILE_KEY,JSON.stringify(p));
+ renderProfileGate();showToast('Profile updated');
+}
+function deleteProfile(id){
+ const ps=migrateProfiles();const p=ps.find(x=>x.id===id);if(!p||!confirm(`Delete ${p.name}'s profile?`))return;
+ const next=ps.filter(x=>x.id!==id);localStorage.setItem(PROFILES_KEY,JSON.stringify(next));
+ if(activeProfileId()===id){localStorage.removeItem(ACTIVE_PROFILE_KEY);localStorage.removeItem(PROFILE_KEY);}
+ if(!next.length){startCreateProfile();}else{renderProfileGate();}
+}
+function selectGatePFP(btn,avatar){document.querySelectorAll('#gatePFPGrid .pfp-choice').forEach(x=>x.classList.remove('selected'));btn.classList.add('selected');$('gateAvatarPreview').textContent=avatar;$('gateAvatarPreview').dataset.avatar=avatar}
+function createProfile(){
+ const name=$('gateName')?.value.trim();if(!name){$('gateName')?.focus();return showToast('Enter a profile name');}
+ const ps=migrateProfiles();const p={id:'p_'+Date.now()+'_'+Math.random().toString(36).slice(2,7),name,bio:$('gateBio')?.value.trim()||'',avatar:$('gateAvatarPreview')?.dataset.avatar||'🌌'};
+ ps.push(p);localStorage.setItem(PROFILES_KEY,JSON.stringify(ps));localStorage.setItem(ACTIVE_PROFILE_KEY,p.id);localStorage.setItem(PROFILE_KEY,JSON.stringify(p));loadProfileUI();$('profileGate').classList.remove('show');document.body.style.overflow='';if(remoteFocusEl)remoteFocusEl.classList.remove('remote-focus');remoteFocusEl=null;showToast('Profile created');
+}
+function openProfile(){
+ const p=getProfile();$('profileName').value=p.name||'Guest';$('profileBio').value=p.bio||'';$('profileHeading').textContent=p.name||'Guest';$('profileAvatarPreview').textContent=p.avatar||'🌌';
+ $('pfpGrid').innerHTML=PFP_OPTIONS.map(x=>`<button class="pfp-choice ${x===(p.avatar||'🌌')?'selected':''}" onclick="selectPFP(this,'${x}')">${x}</button>`).join('');
+ $('profileListCount').textContent=JSON.parse(localStorage.getItem('novara_list')||'[]').length;const cw=JSON.parse(localStorage.getItem(CONTINUE_KEY)||'{}');$('profileContinueCount').textContent=Object.keys(cw).length;$('profileBetaStatus').textContent=isBetaEnrolled()?'On':'Off';$('profileModal').classList.add('show');
+}
+function selectPFP(btn,avatar){document.querySelectorAll('.pfp-choice').forEach(x=>x.classList.remove('selected'));btn.classList.add('selected');$('profileAvatarPreview').textContent=avatar;$('profileAvatarPreview').dataset.avatar=avatar}
+function saveProfile(){
+ const old=getProfile();const p={...old,name:($('profileName').value.trim()||'Profile'),bio:$('profileBio').value.trim(),avatar:$('profileAvatarPreview').dataset.avatar||$('profileAvatarPreview').textContent||'🌌'};localStorage.setItem(PROFILE_KEY,JSON.stringify(p));const ps=migrateProfiles().map(x=>x.id===p.id?p:x);if(p.id)localStorage.setItem(PROFILES_KEY,JSON.stringify(ps));$('profileHeading').textContent=p.name;$('navAvatar').textContent=p.avatar;closeProfile();showToast('Profile saved');
+}
+function resetProfile(){if(!confirm('Reset this profile?'))return;const id=activeProfileId();let ps=migrateProfiles().filter(x=>x.id!==id);localStorage.setItem(PROFILES_KEY,JSON.stringify(ps));localStorage.removeItem(PROFILE_KEY);localStorage.removeItem(ACTIVE_PROFILE_KEY);closeProfile();renderProfileGate()}
+function switchProfile(){closeProfile();renderProfileGate()}
+function closeProfile(){$('profileModal')?.classList.remove('show')}
+function loadProfileUI(){const p=getProfile();if($('navAvatar'))$('navAvatar').textContent=p.avatar||'🌌'}
+
+function switchSettingsTab(tab){document.querySelectorAll('.settings-tab').forEach(b=>b.classList.toggle('active',b.dataset.tab===tab));document.querySelectorAll('.settings-panel').forEach(p=>p.classList.toggle('active',p.id==='settings-'+tab));$('settingsTitle').textContent=SETTINGS_TITLES[tab]||'Settings';if(tab==='beta')updateBetaUI()}
+function applyVisualSettings(){const vals={compactCards:localStorage.getItem('novara_compact_cards')==='1',hoverEffects:localStorage.getItem('novara_hover_effects')!=='0',backdropEffects:localStorage.getItem('novara_backdrop_effects')!=='0',showRatings:localStorage.getItem('novara_show_ratings')!=='0'};document.body.classList.toggle('compact-cards',vals.compactCards);document.body.classList.toggle('no-hover',!vals.hoverEffects);document.body.classList.toggle('no-backdrop-effects',!vals.backdropEffects);document.body.classList.toggle('hide-ratings',!vals.showRatings);[['compactCards','compactCardsToggle'],['hoverEffects','hoverEffectsToggle'],['backdropEffects','backdropEffectsToggle'],['showRatings','showRatingsToggle']].forEach(([k,id])=>$(id)?.classList.toggle('on',vals[k]))}
+function toggleVisualSetting(key){const keyMap={compactCards:'novara_compact_cards',hoverEffects:'novara_hover_effects',backdropEffects:'novara_backdrop_effects',showRatings:'novara_show_ratings'};const k=keyMap[key];if(!k)return;const next=localStorage.getItem(k)==='1'?false:key==='compactCards'?true:true;localStorage.setItem(k,next?'1':'0');applyVisualSettings()}
+function applyAccessibility(){const fs=localStorage.getItem('novara_font_size')||'normal';document.body.classList.remove('font-large','font-xlarge');if(fs!=='normal')document.body.classList.add('font-'+fs);const contrast=localStorage.getItem('novara_contrast')==='1';const focus=localStorage.getItem('novara_focus')!=='0';document.body.classList.toggle('high-contrast',contrast);document.body.classList.toggle('show-focus',focus);if($('fontSizeSelect'))$('fontSizeSelect').value=fs;$('contrastToggle')?.classList.toggle('on',contrast);$('focusToggle')?.classList.toggle('on',focus)}
+function setFontSize(v){localStorage.setItem('novara_font_size',['normal','large','xlarge'].includes(v)?v:'normal');applyAccessibility()}
+function toggleAccessibility(key){const k=key==='contrast'?'novara_contrast':'novara_focus';const on=localStorage.getItem(k)!=='1';localStorage.setItem(k,on?'1':'0');applyAccessibility()}
+const TV_REMOTE_TIMEOUT=60000;
+let tvRemoteLastInput=0;
+function isTVRemoteEnabled(){return localStorage.getItem('novara_tv_remote')==='1'}
+function enableTVRemoteFromInput(){
+ tvRemoteLastInput=Date.now();
+ if(!isTVRemoteEnabled()){localStorage.setItem('novara_tv_remote','1');applyTVRemoteSetting();showToast('TV Remote detected')}
+}
+function touchTVRemoteInput(){
+ if(!isTVRemoteEnabled())return;
+ tvRemoteLastInput=Date.now();
+}
+function disableTVRemoteForInactivity(){
+ if(isTVRemoteEnabled()&&tvRemoteLastInput&&Date.now()-tvRemoteLastInput>=TV_REMOTE_TIMEOUT){
+  localStorage.setItem('novara_tv_remote','0');
+  applyTVRemoteSetting();
+  showToast('TV Remote disabled after 1 minute of inactivity');
+ }
+}
+function applyTVRemoteSetting(){const on=isTVRemoteEnabled();$('tvRemoteToggle')?.classList.toggle('on',on);if(!on&&remoteFocusEl){remoteFocusEl.classList.remove('remote-focus');remoteFocusEl=null}}
+function toggleTVRemote(){const on=isTVRemoteEnabled();localStorage.setItem('novara_tv_remote',on?'0':'1');if(!on)tvRemoteLastInput=Date.now();else tvRemoteLastInput=0;applyTVRemoteSetting();showToast(on?'TV Remote disabled':'TV Remote enabled')}
+setInterval(disableTVRemoteForInactivity,1000);
+function openSettings(){applyPerformanceSettings();applyVisualSettings();applyAccessibility();applyTVRemoteSetting();loadBetaFeatures();loadAISettings();if($('themeSelect'))$('themeSelect').value=localStorage.getItem('novara_theme')||'midnight';['autoplay','autonext'].forEach(k=>$(k+'Toggle')?.classList.toggle('on',localStorage.getItem('novara_'+k)!=='0'));updateBetaProgramUI();switchSettingsTab('appearance');$('settings').classList.add('show')}
 function closeSettings(){$('settings').classList.remove('show')}
-document.addEventListener('keydown',e=>{if(e.key==='Escape'){closePlayer();closeDetails();closeSettings();closeTrailer();closeProviderPage();closeSearchPage();closePerson()}});
+function showChangelog(){$('changelog')?.classList.add('show')}
+function closeChangelog(){$('changelog')?.classList.remove('show')}
+/* TV / streaming remote navigation */
+let remoteFocusEl=null;
+const REMOTE_KEYS={
+ ArrowUp:'up',ArrowDown:'down',ArrowLeft:'left',ArrowRight:'right',
+ Up:'up',Down:'down',Left:'left',Right:'right',
+ Enter:'enter',' ':'enter',Accept:'enter',Select:'enter',OK:'enter',Ok:'enter',
+ Escape:'back',Backspace:'back',BrowserBack:'back',GoBack:'back',Back:'back',
+ MediaPlayPause:'playpause',PlayPause:'playpause',MediaPlay:'play',MediaPause:'pause',
+ ChannelUp:'up',ChannelDown:'down'
+};
+const REMOTE_KEYCODES={38:'up',40:'down',37:'left',39:'right',13:'enter',32:'enter',27:'back',8:'back',461:'back',10009:'back'};
+function remoteVisible(el){if(!el)return false;const r=el.getBoundingClientRect(),st=getComputedStyle(el);return st.display!=='none'&&st.visibility!=='hidden'&&r.width>0&&r.height>0}
+function remoteCandidates(){
+ if(!isTVRemoteEnabled())return [];
+ const changelog=$('changelog');
+ if(changelog?.classList.contains('show')) return [...changelog.querySelectorAll('button:not([disabled]),a[href],input:not([disabled]),select:not([disabled]),[tabindex]:not([tabindex="-1"])')].filter(remoteVisible);
+ const gate=$('profileGate');
+ if(gate?.classList.contains('show')) return [...gate.querySelectorAll('button:not([disabled]),input:not([disabled]),select:not([disabled]),.gate-profile')].filter(remoteVisible);
+ const modal=$('profileModal');
+ if(modal?.classList.contains('show')) return [...modal.querySelectorAll('button:not([disabled]),input:not([disabled]),select:not([disabled]),.profile-option')].filter(remoteVisible);
+ if(playerIsOpen()) return playerControls();
+ const overlays=['detailView','dedicatedPage','searchPage','providerPage','settings','trailerModal'];
+ const openOverlay=overlays.map(id=>$(id)).find(x=>x?.classList.contains('show'));
+ const root=openOverlay||document;
+ return [...root.querySelectorAll('button:not([disabled]),a[href],input:not([disabled]),select:not([disabled]),[tabindex]:not([tabindex="-1"]),.poster,.provider')].filter(remoteVisible);
+}
+function setRemoteFocus(el,scroll=true){if(!el)return;if(remoteFocusEl)remoteFocusEl.classList.remove('remote-focus');remoteFocusEl=el;remoteFocusEl.classList.add('remote-focus');try{el.focus({preventScroll:!scroll})}catch(_){try{el.focus()}catch(__){}}if(scroll)el.scrollIntoView({block:'nearest',inline:'nearest'});}
+function remoteStartFocus(){if(!isTVRemoteEnabled())return;const c=remoteCandidates();if(!c.length)return;const preferred=c.find(x=>x.dataset.remoteStart)||c.find(x=>x.classList.contains('gate-profile'))||c.find(x=>x.classList.contains('poster'))||c[0];setRemoteFocus(preferred,false);}
+function remoteAdjustSelect(dir){
+ const el=remoteFocusEl;
+ if(!el || el.tagName!=='SELECT' || !el.options.length)return false;
+ const currentIndex=Math.max(0,el.selectedIndex);
+ const next=Math.max(0,Math.min(el.options.length-1,currentIndex+(dir==='up'?-1:1)));
+ if(next===currentIndex)return true;
+ el.selectedIndex=next;
+ el.dispatchEvent(new Event('change',{bubbles:true}));
+ return true;
+}
+function remoteMove(dir){
+ const c=remoteCandidates();if(!c.length)return;
+ if((dir==='up'||dir==='down')&&remoteAdjustSelect(dir))return;
+ if(!remoteFocusEl||!c.includes(remoteFocusEl)){remoteStartFocus();return;}
+ const a=remoteFocusEl.getBoundingClientRect(),ax=a.left+a.width/2,ay=a.top+a.height/2;
+ const sameRow=c.filter(x=>x!==remoteFocusEl&&Math.abs((x.getBoundingClientRect().top+x.getBoundingClientRect().height/2)-ay)<Math.max(42,a.height*.7));
+ let opts=[];
+ if(dir==='left'||dir==='right'){
+  opts=sameRow.map(x=>{const r=x.getBoundingClientRect(),cx=r.left+r.width/2;return{x,primary:dir==='left'?ax-cx:cx-ax,cross:Math.abs((r.top+r.height/2)-ay)}}).filter(o=>o.primary>5).sort((a,b)=>a.primary-b.primary||a.cross-b.cross);
+ }else{
+  const rows=[];
+  c.filter(x=>x!==remoteFocusEl).forEach(x=>{const r=x.getBoundingClientRect(),cy=r.top+r.height/2,delta=dir==='up'?ay-cy:cy-ay;if(delta>8)rows.push({x,r,delta});});
+  if(rows.length){const minDelta=Math.min(...rows.map(o=>o.delta));const band=rows.filter(o=>o.delta<=minDelta+Math.max(80,a.height));opts=band.map(o=>{const cx=o.r.left+o.r.width/2;return{x:o.x,primary:Math.abs(cx-ax),cross:o.delta}}).sort((a,b)=>a.primary-b.primary||a.cross-b.cross);}
+ }
+ if(opts[0])setRemoteFocus(opts[0].x);
+}
+
+function playerIsOpen(){return !!$('player')?.classList.contains('show')}
+function playerControls(){return [...document.querySelectorAll('#remotePlayerBar .remote-player-control, #tvControls .remote-player-control, #player .player-close')].filter(remoteVisible)}
+function remotePlayerAction(action){
+ const frame=$('playerFrame');
+ try{
+  if(action==='playpause'){frame?.contentWindow?.postMessage({type:'cinesrc:command',command:'togglePlay',args:[]},'https://cinesrc.st');}
+  else if(action==='back10'){frame?.contentWindow?.postMessage({type:'cinesrc:command',command:'seekBy',args:[-10]},'https://cinesrc.st');}
+  else if(action==='forward10'){frame?.contentWindow?.postMessage({type:'cinesrc:command',command:'seekBy',args:[10]},'https://cinesrc.st');}
+  else if(action==='fullscreen'){if(frame?.requestFullscreen)frame.requestFullscreen();else frame?.contentWindow?.postMessage({type:'cinesrc:command',command:'requestFullscreen',args:[]},'https://cinesrc.st');}
+ }catch(e){}
+}
+function remoteStartPlayerFocus(){if(!isTVRemoteEnabled()||!playerIsOpen())return;const c=playerControls();if(!c.length)return;setRemoteFocus(c.find(x=>x.dataset.playerAction==='playpause')||c[0],false);$('player').classList.add('with-remote-focus');}
+function remoteMovePlayer(dir){const c=playerControls();if(!c.length)return;if(!remoteFocusEl||!c.includes(remoteFocusEl)){remoteStartPlayerFocus();return;}const a=remoteFocusEl.getBoundingClientRect(),ax=a.left+a.width/2,ay=a.top+a.height/2;const opts=c.filter(x=>x!==remoteFocusEl).map(x=>{const r=x.getBoundingClientRect(),cx=r.left+r.width/2,cy=r.top+r.height/2,dx=cx-ax,dy=cy-ay,primary=dir==='left'?-dx:dir==='right'?dx:dir==='up'?-dy:dy,cross=dir==='left'||dir==='right'?Math.abs(dy):Math.abs(dx);return{x,primary,cross,dist:Math.hypot(dx,dy)}}).filter(o=>o.primary>5).sort((a,b)=>a.primary-b.primary||a.cross-b.cross||a.dist-b.dist);if(opts[0])setRemoteFocus(opts[0].x);}
+function remoteEnterPlayer(){if(!remoteFocusEl||!playerControls().includes(remoteFocusEl)){remoteStartPlayerFocus();return;}const action=remoteFocusEl.dataset.playerAction;if(action==='close'){closePlayer();return}if(action==='playpause'||action==='back10'||action==='forward10'||action==='fullscreen'){remotePlayerAction(action);return}if(action==='season'){remoteFocusEl.focus();return}if(action==='episode'){remoteFocusEl.focus();return}remoteFocusEl.click?.();}
+async function remotePlayCard(el){
+ const id=Number(el?.dataset?.tmdbId);const type=el?.dataset?.mediaType==='tv'?'tv':'movie';if(!id||needToken())return;
+ try{const d=await api(`/${type}/${id}?language=en-US`);current={...d,media_type:type};if(type==='movie'){openPlayer(movieEmbed(id),`${title(current)} • TMDB #${id}`,false);return;}const seasons=(current.seasons||[]).filter(x=>Number(x.season_number)>0&&Number(x.episode_count)>0);if(!seasons.length){alert('No playable seasons were found.');return;}const season=Number(seasons[0].season_number);$('seasonSelect').innerHTML=seasons.map(x=>`<option value="${x.season_number}">Season ${x.season_number}</option>`).join('');$('seasonSelect').value=String(season);$('episodeSelect').innerHTML='<option value="">Loading episodes...</option>';openPlayer('',`${title(current)} • TMDB #${id}`,true);await loadEpisodes(season,true);}catch(e){console.error(e);alert('Could not start this title.');}
+}
+function goHomeAfterRemotePlayer(){try{closeDetails();}catch(_){}try{closeDedicatedPage();}catch(_){}try{closeSearchPage();}catch(_){}try{closeProviderPage();}catch(_){}try{closeTrailer();}catch(_){}document.querySelector('main')?.style.removeProperty('display');$('hero')?.style.removeProperty('display');$('detailView')?.classList.remove('show');$('dedicatedPage')?.classList.remove('show');document.body.classList.remove('detail-open');document.body.style.overflow='';window.scrollTo({top:0,behavior:'instant'});setTimeout(remoteStartFocus,120);}
+function remoteBack(){if($('changelog')?.classList.contains('show')){closeChangelog();setTimeout(remoteStartFocus,80);return;}if($('profileGate')?.classList.contains('show')){if($('gateProfiles')?.querySelector('.gate-create')){renderProfileGate();return;}return;}if($('profileModal')?.classList.contains('show')){closeProfile();return;}if($('player')?.classList.contains('show')){closePlayer();setTimeout(goHomeAfterRemotePlayer,220);return;}if($('details')?.classList.contains('show')){closeDetails();return;}if($('settings')?.classList.contains('show')){closeSettings();return;}if($('searchPage')?.classList.contains('show')){closeSearchPage();return;}if($('providerPage')?.classList.contains('show')){closeProviderPage();return;}if($('trailerModal')?.classList.contains('show')){closeTrailer();return;}}
+document.addEventListener('keydown',e=>{
+ const action=REMOTE_KEYS[e.key]||REMOTE_KEYS[e.code]||REMOTE_KEYCODES[e.keyCode];
+ const typing=['INPUT','TEXTAREA','SELECT'].includes(document.activeElement?.tagName);
+ if(action){
+  enableTVRemoteFromInput();
+  // D-pad / OK / Back must work even when the TV browser does not expose a normal keyboard focus.
+  if(['up','down','left','right'].includes(action)){e.preventDefault();e.stopPropagation();playerIsOpen()?remoteMovePlayer(action):remoteMove(action);return;}
+  if(action==='enter'&&!typing){e.preventDefault();e.stopPropagation();if(playerIsOpen()){remoteEnterPlayer();}else if(remoteFocusEl?.classList.contains('poster')){remotePlayCard(remoteFocusEl);}else if(remoteFocusEl?.click)remoteFocusEl.click();return;}
+  if(action==='back'&&!typing){e.preventDefault();e.stopPropagation();remoteBack();return;}
+  if(action==='playpause'&&!typing){e.preventDefault();e.stopPropagation();if(playerIsOpen())remotePlayerAction('playpause');else if(current)playCurrent();return;}
+ }
+ if(isBetaEnrolled()&&betaFeatures.keyboardShortcuts){
+  if(e.key==='/'&&!typing){e.preventDefault();$('search')?.focus();}
+  if(e.code==='Space'&&!typing){e.preventDefault();if(current)playCurrent();}
+ }
+ if(e.key==='Escape'){closePlayer();closeDetails();closeSettings();closeTrailer();closeProviderPage();closeSearchPage();closePerson();closeProfile()}
+});
+/* Gamepad / TV remote support: many smart-TV browsers expose Bluetooth remotes as a Gamepad. */
+let remoteGamepadIndex=null,remotePadState={up:0,down:0,left:0,right:0,enter:0,back:0};
+function remoteGamepadAction(action){
+ enableTVRemoteFromInput();
+ if(['up','down','left','right'].includes(action)){
+  if(playerIsOpen()&&['up','down'].includes(action)&&remoteAdjustSelect(action))return;
+  remoteMove(action);return;
+ }
+ if(action==='enter'){
+  if(playerIsOpen())remoteEnterPlayer();
+  else if(remoteFocusEl?.classList.contains('poster'))remotePlayCard(remoteFocusEl);
+  else remoteFocusEl?.click?.();
+  return;
+ }
+ if(action==='back'){remoteBack();return;}
+ if(action==='playpause'){
+  if(playerIsOpen())remotePlayerAction('playpause');
+  else if(current)playCurrent();
+ }
+}
+function pollTVRemote(){
+ const pads=navigator.getGamepads?navigator.getGamepads():[];
+ let pad=remoteGamepadIndex!=null?pads[remoteGamepadIndex]:null;
+ if(!pad){pad=[...pads].find(x=>x);if(pad)remoteGamepadIndex=pad.index;}
+ if(pad){
+  const ax=pad.axes||[];
+  const held={
+   left:!!pad.buttons?.[14]?.pressed || (ax[0]??0)<-0.55,
+   right:!!pad.buttons?.[15]?.pressed || (ax[0]??0)>0.55,
+   up:!!pad.buttons?.[12]?.pressed || (ax[1]??0)<-0.55,
+   down:!!pad.buttons?.[13]?.pressed || (ax[1]??0)>0.55,
+   enter:!!pad.buttons?.[0]?.pressed,
+   back:!!pad.buttons?.[1]?.pressed
+  };
+  for(const k of Object.keys(held)){
+   if(held[k]&&!remotePadState[k]){remotePadState[k]=1;remoteGamepadAction(k);}
+   if(!held[k])remotePadState[k]=0;
+  }
+ }
+ requestAnimationFrame(pollTVRemote);
+}
+window.addEventListener('gamepadconnected',e=>{remoteGamepadIndex=e.gamepad.index;enableTVRemoteFromInput();setTimeout(remoteStartFocus,50);});
+setTimeout(()=>{if(isTVRemoteEnabled()){tvRemoteLastInput=tvRemoteLastInput||Date.now();remoteStartFocus();}requestAnimationFrame(pollTVRemote)},500);
 window.addEventListener('storage',e=>{if(e.key===CONTINUE_KEY)renderContinueWatching();if(e.key==='novara_theme'){setTheme(e.newValue||'midnight')}});
 
 window.addEventListener('hashchange',()=>{
@@ -799,33 +1225,106 @@ window.addEventListener('hashchange',()=>{
  if(m)openDetails(Number(m[2]),m[1]);
 });
 
-renderContinueWatching(); setTimeout(()=>$('startup')?.classList.add('hide'),8000);
+initializeContinueStorage(); loadBetaFeatures(); loadProfileUI(); applyTVRemoteSetting();
+setTimeout(()=>{const hasProfiles=migrateProfiles().length>0;if(hasProfiles){renderProfileGate()}else{renderProfileGate();setTimeout(()=>startCreateProfile(),120)}},300); applyVisualSettings(); applyAccessibility(); renderContinueWatching(); maybeShowDeviceChoice(); showChangelog();  setTimeout(()=>$('startup')?.classList.add('hide'),8000);
 const savedTheme=localStorage.getItem('novara_theme')||'midnight';document.body.dataset.theme=savedTheme;if($('themeSelect'))$('themeSelect').value=savedTheme;
 init().then(()=>{const m=location.hash.match(/^#(movie|tv)-(\d+)$/);if(m)openDetails(Number(m[2]),m[1]);});
 </script>
 <style>
-.admin-overlay{position:fixed;inset:0;background:#050609f2;backdrop-filter:blur(18px);z-index:9999;display:none;overflow:auto}.admin-overlay.show{display:block}.admin-box{max-width:1100px;margin:50px auto;background:#0d0f14;border:1px solid #252936;border-radius:24px;box-shadow:0 25px 80px #000b;padding:28px}.admin-top{display:flex;justify-content:space-between;align-items:center;gap:15px}.admin-top h1{margin:0}.admin-close,.admin-btn{border:1px solid #303544;background:#ffffff0a;color:#fff;border-radius:12px;padding:10px 15px;font-weight:800;cursor:pointer}.admin-btn.primary{background:#e50914;border-color:#e50914}.admin-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin-top:22px}.admin-card{background:#12151b;border:1px solid #262b37;border-radius:18px;padding:20px}.admin-card h3{margin-top:0}.admin-input,.admin-textarea{width:100%;box-sizing:border-box;background:#090b0f;border:1px solid #303544;color:#fff;border-radius:10px;padding:12px;margin:7px 0 12px;outline:0}.admin-textarea{min-height:110px;resize:vertical}.admin-login{max-width:430px;margin:12vh auto}.admin-stat{font-size:30px;font-weight:900}.admin-list{margin-top:20px}.admin-item{display:flex;align-items:center;justify-content:space-between;gap:12px;background:#10131a;border:1px solid #252a35;padding:13px;border-radius:12px;margin-top:8px}.admin-danger{border-color:#6b2020!important;color:#ff8b8b!important}.admin-note{color:#9ba3b4;font-size:13px}.admin-toast{position:fixed;right:22px;bottom:22px;background:#171b23;color:#fff;border:1px solid #303644;border-radius:12px;padding:13px 16px;z-index:10001;display:none}
-</style><div class="admin-overlay" id="adminOverlay"><div class="admin-box" id="adminRoot"></div></div><div class="admin-toast" id="adminToast"></div><script>
+/* NOVARA PROFILE UI */
+.profile-gate{position:fixed;inset:0;z-index:10030;background:radial-gradient(circle at 50% 25%,#171a21 0,#07080b 42%,#020304 100%);display:none;align-items:center;justify-content:center;padding:28px;overflow:auto}.profile-gate.show{display:flex}.profile-gate-inner{width:min(1000px,100%);text-align:center}.gate-logo{font-size:20px;font-weight:950;letter-spacing:2px;color:#fff;margin-bottom:70px}.gate-kicker{font-size:11px;font-weight:900;letter-spacing:2.5px;color:#888f9c;margin-bottom:12px}.profile-gate h1{font-size:48px;letter-spacing:-2px;margin:0 0 10px;font-weight:850}.profile-gate p{color:#858b96;margin:0 0 42px}.gate-profiles{display:flex;justify-content:center;gap:28px;flex-wrap:wrap;min-height:160px}.gate-profile{width:150px;background:none;border:0;color:#fff;cursor:pointer}.gate-avatar{width:150px;height:150px;border-radius:10px;display:grid;place-items:center;font-size:68px;background:linear-gradient(145deg,#1b1f27,#0d0f13);border:2px solid transparent;box-shadow:0 18px 45px #0008;transition:.2s}.gate-profile:hover .gate-avatar{border-color:#fff;transform:scale(1.04)}.gate-name{display:block;margin-top:13px;color:#aeb3bd;font-size:15px;font-weight:700;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.gate-profile:hover .gate-name{color:#fff}.gate-add{width:150px;margin:28px auto 0;background:none;border:0;color:#888;cursor:pointer}.gate-add span{display:grid;place-items:center;width:150px;height:150px;border-radius:10px;background:#101217;border:2px solid #ffffff12;font-size:58px;font-weight:300;transition:.2s}.gate-add:hover span{color:#fff;border-color:#777;transform:scale(1.04)}.gate-add b{display:block;margin-top:13px;font-size:15px}.gate-note{font-size:11px;color:#555b65;margin-top:35px}.gate-create{width:min(520px,100%);margin:0 auto;background:#0d1014;border:1px solid #ffffff12;border-radius:24px;padding:30px;box-shadow:0 30px 90px #000b;text-align:left}.gate-create-head{text-align:center;margin-bottom:22px}.gate-create-head h2{font-size:28px;margin:5px 0}.gate-create-head p{margin:0}.gate-create .profile-fields{display:grid;grid-template-columns:1fr;gap:12px}.gate-create .pfp-grid{margin-top:9px}.gate-create-actions{display:flex;gap:10px;margin-top:20px}.gate-cancel{flex:1;border:1px solid #ffffff12;background:#ffffff06;color:#aaa;border-radius:11px;padding:13px;font-weight:800}.gate-save{flex:1;border:0;background:var(--accent);color:var(--accentText);border-radius:11px;padding:13px;font-weight:850}@media(max-width:600px){.profile-gate h1{font-size:35px}.gate-logo{margin-bottom:45px}.gate-profiles{gap:16px}.gate-profile,.gate-avatar,.gate-add,.gate-add span{width:115px}.gate-avatar,.gate-add span{height:115px;font-size:52px}}
+.profile-modal{position:fixed;inset:0;z-index:10020;background:#020304dc;backdrop-filter:blur(22px);display:none;align-items:center;justify-content:center;padding:20px}.profile-modal.show{display:flex}.profile-card{position:relative;width:min(560px,100%);background:linear-gradient(160deg,#15181e,#0b0d10);border:1px solid #ffffff14;border-radius:24px;padding:26px;box-shadow:0 30px 100px #000c}.profile-close{position:absolute;right:16px;top:16px;width:38px;height:38px;border-radius:50%;border:1px solid #ffffff12;background:#ffffff08;color:#fff;font-size:22px}.profile-hero{display:flex;align-items:center;gap:15px;padding:4px 0 20px}.profile-avatar{width:82px;height:82px;border-radius:24px;display:grid;place-items:center;font-size:42px;background:linear-gradient(145deg,var(--accent),#16191f);color:var(--accentText);box-shadow:0 12px 35px #0006}.profile-hero h2{margin:4px 0;font-size:27px}.profile-hero p{margin:0;color:#858a95;font-size:12px}.profile-fields{display:grid;grid-template-columns:1fr 1fr;gap:10px}.profile-fields label{font-size:11px;color:#aeb2bc;font-weight:800}.profile-fields input{width:100%;margin-top:7px;padding:12px;border-radius:11px;border:1px solid #ffffff12;background:#080a0d;color:#fff;outline:0}.profile-fields input:focus{border-color:var(--accent)}.profile-section-title{font-size:11px;color:#aeb2bc;font-weight:850;margin:20px 0 9px}.pfp-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}.pfp-choice{height:62px;border:1px solid #ffffff0e;background:#ffffff05;border-radius:13px;font-size:27px}.pfp-choice:hover,.pfp-choice.selected{border-color:var(--accent);background:color-mix(in srgb,var(--accent) 12%,transparent);transform:translateY(-1px)}.profile-actions{display:flex;gap:9px;margin-top:20px}.profile-secondary,.profile-save{flex:1;border-radius:11px;padding:12px;font-weight:850}.profile-secondary{border:1px solid #ffffff12;background:#ffffff06;color:#aaa}.profile-save{border:0;background:var(--accent);color:var(--accentText)}.profile-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:14px}.profile-stats span{padding:11px;border:1px solid #ffffff0b;background:#ffffff04;border-radius:11px;text-align:center}.profile-stats b{display:block;font-size:17px}.profile-stats small{color:#777d88;font-size:9px;text-transform:uppercase;letter-spacing:.7px}@media(max-width:560px){.profile-fields{grid-template-columns:1fr}.pfp-grid{grid-template-columns:repeat(4,1fr)}.profile-card{padding:21px}.profile-avatar{width:70px;height:70px;font-size:35px}}
+.remote-focus{outline:3px solid var(--accent)!important;outline-offset:5px!important;box-shadow:0 0 0 5px color-mix(in srgb,var(--accent) 22%,transparent),0 0 28px color-mix(in srgb,var(--accent) 35%,transparent)!important;transform:scale(1.035);z-index:3}.gate-profile.remote-focus .gate-name,.gate-add.remote-focus b{color:#fff}.remote-hint{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);z-index:10040;padding:9px 14px;border-radius:999px;background:#0b0d10e8;border:1px solid #ffffff18;color:#9ca3af;font-size:11px;font-weight:800;backdrop-filter:blur(12px);pointer-events:none}.remote-hint b{color:#fff}@media(max-width:900px){.remote-hint{display:none}}
+body.beta-spoiler-free .detail-desc{filter:blur(7px);cursor:pointer;user-select:none}body.beta-spoiler-free .detail-desc:hover{filter:none}body.beta-spoiler-free .detail-overview-label:after{content:' • hover to reveal'}
+</style>
+<style>
+.admin-overlay{position:fixed;inset:0;background:rgba(2,3,4,.88);backdrop-filter:blur(24px);z-index:9999;display:none;overflow:auto}.admin-overlay.show{display:block}.admin-box{max-width:1180px;min-height:calc(100vh - 70px);margin:35px auto;background:var(--panel,#101216);border:1px solid var(--line,#262a33);border-radius:28px;box-shadow:0 30px 100px #000c;padding:30px;color:var(--text,#fff)}.admin-top{display:flex;justify-content:space-between;align-items:center;gap:20px;padding-bottom:22px;border-bottom:1px solid var(--line,#262a33)}.admin-brand{display:flex;align-items:center;gap:12px}.admin-brand-mark{width:42px;height:42px;border-radius:12px;background:#e50914;display:grid;place-items:center;font-weight:900}.admin-top h1{margin:2px 0 4px;font-size:30px}.admin-close,.admin-btn{border:1px solid var(--line,#303544);background:var(--glass,#ffffff08);color:var(--text,#fff);border-radius:12px;padding:11px 16px;font-weight:800;cursor:pointer;transition:.2s}.admin-close:hover,.admin-btn:hover{transform:translateY(-1px);background:#ffffff12}.admin-btn.primary{background:#e50914;border-color:#e50914;box-shadow:0 8px 24px #e5091430}.admin-grid{display:grid;grid-template-columns:1fr 1fr 260px;gap:16px;margin-top:22px}.admin-card{background:var(--glass,#ffffff06);border:1px solid var(--line,#262b37);border-radius:18px;padding:20px}.admin-card h3{margin:0 0 14px}.admin-card-icon{font-size:22px;margin-bottom:10px}.admin-input,.admin-textarea{width:100%;box-sizing:border-box;background:#080a0d;border:1px solid var(--line,#303544);color:var(--text,#fff);border-radius:11px;padding:12px;margin:7px 0 12px;outline:0}.admin-input:focus,.admin-textarea:focus{border-color:#e50914;box-shadow:0 0 0 3px #e5091420}.admin-textarea{min-height:120px;resize:vertical}.admin-login{max-width:430px;margin:12vh auto}.admin-stat{font-size:42px;font-weight:900;margin-top:5px}.admin-list{margin-top:28px}.admin-list h2{margin-bottom:14px}.admin-item{display:flex;align-items:center;justify-content:space-between;gap:16px;background:var(--glass,#ffffff05);border:1px solid var(--line,#252a35);padding:15px 16px;border-radius:14px;margin-top:8px}.admin-danger{border-color:#6b2020!important;color:#ff8b8b!important}.admin-note{color:#9ba3b4;font-size:13px}.admin-toast{position:fixed;right:22px;bottom:22px;background:#171b23;color:#fff;border:1px solid #303644;border-radius:12px;padding:13px 16px;z-index:10001;display:none}@media(max-width:900px){.admin-grid{grid-template-columns:1fr 1fr}.admin-grid .admin-card:last-child{grid-column:1/-1}}@media(max-width:650px){.admin-box{margin:0;border-radius:0;min-height:100vh;padding:20px}.admin-top{align-items:flex-start}.admin-grid{grid-template-columns:1fr}.admin-grid .admin-card:last-child{grid-column:auto}.admin-top h1{font-size:24px}}
+
+/* Admin dashboard v2 */
+.admin-overlay{background:rgba(2,3,4,.92);backdrop-filter:blur(28px)}
+.admin-box{max-width:1240px;background:#0b0d10;border:1px solid #ffffff12;padding:0;overflow:hidden}
+.admin-top{padding:24px 28px;background:linear-gradient(135deg,#15171c,#0b0d10);border-bottom:1px solid #ffffff0d}
+.admin-brand-mark{background:var(--accent);color:var(--accentText);box-shadow:0 10px 30px color-mix(in srgb,var(--accent) 25%,transparent)}
+.admin-nav{display:flex;gap:7px;padding:14px 28px;border-bottom:1px solid #ffffff0d;background:#090b0e;overflow:auto}
+.admin-nav button{border:1px solid transparent;background:transparent;color:#8f939d;padding:10px 13px;border-radius:10px;font-weight:800;white-space:nowrap}.admin-nav button.active,.admin-nav button:hover{background:#ffffff08;color:#fff;border-color:#ffffff0c}
+.admin-content{padding:22px 28px 32px}.admin-panel{display:none}.admin-panel.active{display:block}
+.admin-stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px}.admin-stat-card{padding:18px;border:1px solid #ffffff0c;border-radius:16px;background:#101318}.admin-stat-card span{font-size:11px;color:#858993}.admin-stat-card b{display:block;font-size:30px;margin-top:7px}.admin-grid{grid-template-columns:1fr 1fr 1fr;margin-top:0}.admin-card{background:#101318;border-color:#ffffff0c}.admin-tools{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.admin-tool{padding:15px;border:1px solid #ffffff0c;background:#0d1014;border-radius:13px}.admin-tool b{display:block;margin-bottom:4px}.admin-tool span{display:block;color:#858993;font-size:12px;line-height:1.4;margin-bottom:10px}.admin-danger{background:#291013!important;border-color:#64272c!important}.admin-success{color:#79e6ad}.admin-log{padding:12px 14px;border:1px solid #ffffff0b;border-radius:11px;background:#0d1014;margin-top:8px;font-size:12px}.admin-empty{padding:22px;border:1px dashed #ffffff14;border-radius:14px;color:#777f8d}.admin-help{color:#858993;font-size:12px;line-height:1.55}.admin-search{max-width:420px}
+@media(max-width:900px){.admin-stat-grid{grid-template-columns:1fr 1fr}.admin-grid{grid-template-columns:1fr 1fr}.admin-tools{grid-template-columns:1fr 1fr}}@media(max-width:650px){.admin-content,.admin-top{padding:18px}.admin-stat-grid,.admin-grid,.admin-tools{grid-template-columns:1fr}.admin-nav{padding:10px 18px}.admin-top h1{font-size:24px}}
+
+/* TV remote movie/show player controls */
+.player-stage{position:relative;flex:1;min-height:0;background:#000;overflow:hidden}.remote-player-bar{position:absolute;left:50%;bottom:22px;transform:translateX(-50%);display:flex;align-items:center;gap:9px;padding:9px 11px;border-radius:18px;background:#08090be8;border:1px solid #ffffff18;backdrop-filter:blur(16px);box-shadow:0 16px 50px #000b;z-index:5;opacity:0;transition:.2s}.player:hover .remote-player-bar,.player.with-remote-focus .remote-player-bar,.remote-player-bar:focus-within{opacity:1}.remote-player-control{min-width:48px;height:42px;padding:0 12px;border:1px solid #ffffff16;border-radius:11px;background:#15171b;color:#fff;font-weight:850;cursor:pointer}.remote-player-control:hover{background:#252932}.remote-player-control.remote-play{min-width:54px;font-size:17px;background:var(--accent);color:var(--accentText)}.remote-player-control.remote-focus{outline:3px solid var(--accent)!important;outline-offset:4px!important;box-shadow:0 0 28px color-mix(in srgb,var(--accent) 40%,transparent)!important;transform:scale(1.06)}.remote-player-hint{position:absolute;right:20px;bottom:20px;z-index:4;color:#8f96a3;background:#08090bd9;border:1px solid #ffffff12;border-radius:999px;padding:7px 11px;font-size:10px;font-weight:800;pointer-events:none}.remote-player-hint b{color:#fff}@media(max-width:700px){.remote-player-bar{bottom:12px;gap:5px}.remote-player-control{min-width:40px;height:38px;padding:0 8px}.remote-player-hint{display:none}}
+
+/* Netflix-inspired NOVARA profile picker */
+.profile-gate{background:#252629;backdrop-filter:none;padding:22px;align-items:center;justify-content:center}
+.profile-gate-panel{width:min(1120px,100%);min-height:min(720px,calc(100vh - 44px));background:linear-gradient(180deg,#111214 0%,#101113 70%,#0c0d0f 100%);border-radius:8px;box-shadow:0 22px 70px #000b;display:flex;flex-direction:column;align-items:center;padding:30px 34px 28px;overflow:auto;position:relative}
+.profile-gate-top{width:100%;display:flex;align-items:center;justify-content:space-between;margin-bottom:54px}
+.gate-logo{font-size:27px;font-weight:950;letter-spacing:-1.2px;color:#fff;margin:0;text-shadow:0 3px 20px #000}
+.manage-profiles-btn{border:1px solid #777b83;background:#16181b;color:#fff;border-radius:18px;padding:7px 14px;font-size:10px;font-weight:800;cursor:pointer}
+.manage-profiles-btn:hover{background:#24272c;border-color:#a2a6ad}
+.profile-gate h1{font-size:42px;letter-spacing:-1.6px;margin:0 0 9px;font-weight:700;color:#f5f5f5}
+.profile-gate p{color:#a4a7ad;margin:0 0 34px;font-size:14px}
+.gate-kicker{font-size:9px;color:#777b84;letter-spacing:2px;margin-bottom:10px}
+.gate-profiles{display:flex;justify-content:center;align-items:flex-start;gap:28px;flex-wrap:wrap;min-height:150px;width:100%}
+.gate-profile{width:128px;background:none;border:0;color:#fff;cursor:pointer;padding:0;position:relative}
+.gate-avatar{width:128px;height:128px;border-radius:50%;display:grid;place-items:center;font-size:58px;background:radial-gradient(circle at 35% 25%,#434852,#171a20 70%);border:2px solid transparent;box-shadow:0 10px 35px #0008;transition:transform .18s,border-color .18s,box-shadow .18s;position:relative;overflow:hidden}
+.gate-avatar:before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,#ffffff15,transparent 42%,#0005);pointer-events:none}
+.avatar-art{position:relative;z-index:1;filter:drop-shadow(0 8px 8px #0008)}
+.gate-profile:hover .gate-avatar{border-color:#fff;transform:scale(1.045);box-shadow:0 14px 42px #000b}
+.gate-name{display:block;margin-top:12px;color:#a9adb5;font-size:14px;font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.gate-profile:hover .gate-name{color:#fff}
+.gate-profile.manage-mode .gate-avatar{border-color:#555b65}
+.avatar-edit{position:absolute;right:3px;bottom:3px;width:30px;height:30px;border-radius:50%;background:#08090b;color:#fff;display:grid;place-items:center;font-size:14px;z-index:2;border:1px solid #ffffff24}
+.gate-add{width:128px;margin:25px auto 0;background:none;border:0;color:#8d9199;cursor:pointer}
+.gate-add span{display:grid;place-items:center;width:128px;height:128px;border-radius:50%;background:#15171a;border:2px solid #3b3e44;font-size:45px;font-weight:300;transition:.18s}
+.gate-add:hover span{color:#fff;border-color:#aaa;transform:scale(1.045);background:#1c1f23}
+.gate-add b{display:block;margin-top:12px;font-size:14px;font-weight:500}
+.gate-recent{width:min(1000px,100%);margin-top:38px;text-align:left}
+.recent-title{font-size:17px;font-weight:700;color:#fff;margin-bottom:12px}
+.recent-row{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
+.recent-mini{min-width:0;color:#b7bac1;font-size:10px;font-weight:600}
+.recent-mini img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:3px;display:block;margin-bottom:7px;background:#181a1e}
+.gate-note{font-size:10px;color:#555960;margin-top:auto;padding-top:25px}
+.gate-create{width:min(560px,100%);margin:0 auto;background:#15171a;border:1px solid #ffffff12;border-radius:10px;padding:27px;box-shadow:0 25px 70px #000b;text-align:left}
+.gate-create-head .profile-avatar{margin:0 auto 12px;border-radius:50%;width:92px;height:92px}
+.gate-create-head{text-align:center;margin-bottom:20px}
+.gate-create-head h2{font-size:25px;margin:5px 0}.gate-create-head p{margin:0}
+.gate-create-actions{display:flex;gap:8px;margin-top:20px}.gate-delete{flex:1;border:1px solid #55252b;background:#241114;color:#ff7d88;border-radius:9px;padding:12px;font-weight:800}
+@media(max-width:760px){.profile-gate{padding:0}.profile-gate-panel{border-radius:0;min-height:100vh;padding:24px 18px}.profile-gate-top{margin-bottom:42px}.profile-gate h1{font-size:34px}.gate-profiles{gap:20px}.gate-profile,.gate-avatar,.gate-add,.gate-add span{width:105px}.gate-avatar,.gate-add span{height:105px}.gate-avatar{font-size:48px}.recent-row{grid-template-columns:repeat(3,1fr)}}
+
+/* TV remote search keyboard */
+.tv-keyboard{display:grid;grid-template-columns:repeat(10,minmax(42px,1fr));gap:8px;max-width:980px;margin:0 auto 22px;padding:0 4px}.tv-key{min-height:48px;border:1px solid var(--line);border-radius:10px;background:#15171b;color:#fff;font-weight:800;font-size:16px;cursor:pointer}.tv-key.wide{grid-column:span 2}.tv-key.space{grid-column:span 4}.tv-key.danger{background:#24171a}.search-page-go{border:1px solid var(--line);border-radius:10px;background:#fff;color:#111;font-weight:900;padding:0 18px;cursor:pointer}.remote-focus{outline:3px solid #fff!important;outline-offset:3px;box-shadow:0 0 0 6px #ffffff24,0 0 28px #fff3!important;position:relative;z-index:20}.poster.remote-focus{transform:translateY(-7px) scale(1.045);}
+@media(max-width:800px){.tv-keyboard{grid-template-columns:repeat(7,minmax(38px,1fr))}}
+</style><div class="admin-overlay" id="adminOverlay" onclick="if(event.target===this)closeAdmin()"><div class="admin-box" id="adminRoot"></div></div><div class="admin-toast" id="adminToast"></div><script>
 (function(){
-const ADMIN_EMAIL='admin@gmail.com',ADMIN_PASSWORD='admin1';
-const KEY='novara_admin_data';
-function data(){try{return JSON.parse(localStorage.getItem(KEY))||{notifications:[],announcements:[]}}catch(e){return{notifications:[],announcements:[]}}}
-function save(d){localStorage.setItem(KEY,JSON.stringify(d))}
-function toast(t){const x=document.getElementById('adminToast');x.textContent=t;x.style.display='block';clearTimeout(window._nt);window._nt=setTimeout(()=>x.style.display='none',2200)}
-function esc(v){return String(v).replace(/[&<>'"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[m]))}
-window.openAdmin=function(){renderLogin();document.getElementById('adminOverlay').classList.add('show')};
-window.closeAdmin=function(){document.getElementById('adminOverlay').classList.remove('show')};
-function renderLogin(){document.getElementById('adminRoot').innerHTML='<div class="admin-login"><div class="small">NOVARA</div><h1>Admin Dashboard</h1><p class="admin-note">Sign in to manage site notifications and announcements.</p><label>Email</label><input class="admin-input" id="adEmail" type="email" placeholder="Admin email"><label>Password</label><input class="admin-input" id="adPass" type="password" placeholder="Password"><button class="admin-btn primary" onclick="adminLogin()">Sign in</button><button class="admin-close" style="float:right" onclick="closeAdmin()">Close</button></div>'}
-window.adminLogin=function(){if(document.getElementById('adEmail').value.trim().toLowerCase()===ADMIN_EMAIL&&document.getElementById('adPass').value===ADMIN_PASSWORD){sessionStorage.setItem('novara_admin_auth','1');renderDashboard()}else toast('Invalid admin login')};
-function renderDashboard(){if(sessionStorage.getItem('novara_admin_auth')!=='1')return renderLogin();const d=data();document.getElementById('adminRoot').innerHTML='<div class="admin-top"><div><div class="small">NOVARA CONTROL CENTER</div><h1>Admin Dashboard</h1><p class="admin-note">Manage announcements and notifications stored for this browser.</p></div><div><button class="admin-btn" onclick="adminLogout()">Log out</button> <button class="admin-close" onclick="closeAdmin()">✕ Close</button></div></div><div class="admin-grid"><div class="admin-card"><h3>📢 Announcement</h3><input class="admin-input" id="annTitle" placeholder="Announcement title"><textarea class="admin-textarea" id="annBody" placeholder="Write an announcement..."></textarea><button class="admin-btn primary" onclick="addAnn()">Publish announcement</button></div><div class="admin-card"><h3>🔔 Notification</h3><input class="admin-input" id="notTitle" placeholder="Notification title"><textarea class="admin-textarea" id="notBody" placeholder="Write a notification..."></textarea><button class="admin-btn primary" onclick="addNot()">Send notification</button></div><div class="admin-card"><h3>📊 Site data</h3><div class="admin-stat">'+(d.announcements.length+d.notifications.length)+'</div><div class="admin-note">Total admin posts</div><br><button class="admin-btn admin-danger" onclick="clearAdminPosts()">Clear all posts</button></div></div><div class="admin-list"><h2>Published content</h2>'+list('Announcements',d.announcements,'announcement')+list('Notifications',d.notifications,'notification')+'</div>'}
-function list(label,a,type){return '<h3>'+label+'</h3>'+(!a.length?'<p class="admin-note">Nothing published yet.</p>':a.slice().reverse().map((x,i)=>'<div class="admin-item"><div><b>'+esc(x.title)+'</b><div class="admin-note">'+esc(x.body)+'</div><div class="admin-note">'+esc(x.date)+'</div></div><button class="admin-btn admin-danger" onclick="deleteAdminPost(\''+type+'\','+x.id+')">Delete</button></div>').join(''))}
-window.addAnn=function(){const t=document.getElementById('annTitle').value.trim(),b=document.getElementById('annBody').value.trim();if(!t||!b)return toast('Enter a title and message');const d=data();d.announcements.push({id:Date.now(),title:t,body:b,date:new Date().toLocaleString()});save(d);renderDashboard();toast('Announcement published')};
-window.addNot=function(){const t=document.getElementById('notTitle').value.trim(),b=document.getElementById('notBody').value.trim();if(!t||!b)return toast('Enter a title and message');const d=data();d.notifications.push({id:Date.now(),title:t,body:b,date:new Date().toLocaleString()});save(d);renderDashboard();toast('Notification sent')};
-window.deleteAdminPost=function(type,id){const d=data();const k=type==='announcement'?'announcements':'notifications';d[k]=d[k].filter(x=>x.id!==id);save(d);renderDashboard();toast('Deleted')};
-window.clearAdminPosts=function(){if(confirm('Delete all announcements and notifications?')){save({notifications:[],announcements:[]});renderDashboard();toast('All posts cleared')}};
-window.adminLogout=function(){sessionStorage.removeItem('novara_admin_auth');renderLogin()};
+const ADMIN_EMAIL='admin@gmail.com',ADMIN_PASSWORD='admin1',KEY='novara_admin_data';
+const data=()=>{try{return JSON.parse(localStorage.getItem(KEY))||{notifications:[],announcements:[],logs:[]}}catch(e){return{notifications:[],announcements:[],logs:[]}}};
+const save=d=>localStorage.setItem(KEY,JSON.stringify(d));
+const esc=v=>String(v??'').replace(/[&<>'"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[m]));
+const toast=t=>{const x=document.getElementById('adminToast');x.textContent=t;x.style.display='block';clearTimeout(window._nt);window._nt=setTimeout(()=>x.style.display='none',2200)};
+const log=a=>{const d=data();d.logs=(d.logs||[]).slice(-49);d.logs.push({id:Date.now(),text:a,date:new Date().toLocaleString()});save(d)};
+window.openAdmin=()=>{renderLogin();document.getElementById('adminOverlay').classList.add('show');document.body.style.overflow='hidden'};
+window.closeAdmin=()=>{document.getElementById('adminOverlay').classList.remove('show');document.body.style.overflow=''};
+function renderLogin(){document.getElementById('adminRoot').innerHTML='<div class="admin-login"><div class="admin-brand"><div class="admin-brand-mark">N</div><div><div class="small">NOVARA CONTROL CENTER</div><h1>Admin Dashboard</h1></div></div><p class="admin-note">Manage NOVARA features, announcements, notifications and local maintenance tools.</p><label>Email</label><input class="admin-input" id="adEmail" type="email" placeholder="Admin email"><label>Password</label><input class="admin-input" id="adPass" type="password" placeholder="Password" onkeydown="if(event.key===\'Enter\')adminLogin()"><button class="admin-btn primary" onclick="adminLogin()">Sign in</button><button class="admin-close" style="float:right" onclick="closeAdmin()">Close</button></div>'}
+window.adminLogin=()=>{if(document.getElementById('adEmail').value.trim().toLowerCase()===ADMIN_EMAIL&&document.getElementById('adPass').value===ADMIN_PASSWORD){sessionStorage.setItem('novara_admin_auth','1');log('Admin signed in');renderDashboard()}else toast('Invalid admin login')};
+function renderDashboard(){if(sessionStorage.getItem('novara_admin_auth')!=='1')return renderLogin();const d=data();document.getElementById('adminRoot').innerHTML=`<div class="admin-top"><div class="admin-brand"><div class="admin-brand-mark">N</div><div><div class="small">NOVARA CONTROL CENTER</div><h1>Admin Dashboard</h1><div class="admin-note">Local control panel for this browser</div></div></div><div><button class="admin-btn" onclick="adminLogout()">Log out</button> <button class="admin-close" onclick="closeAdmin()">✕ Close</button></div></div><div class="admin-nav"><button class="active" data-admin-tab="overview" onclick="adminTab('overview')">▦ Overview</button><button data-admin-tab="publish" onclick="adminTab('publish')">✦ Publish</button><button data-admin-tab="tools" onclick="adminTab('tools')">🛠 Tools</button><button data-admin-tab="logs" onclick="adminTab('logs')">◷ Activity</button></div><div class="admin-content"><section class="admin-panel active" id="admin-overview"><div class="admin-stat-grid"><div class="admin-stat-card"><span>Announcements</span><b>${d.announcements.length}</b></div><div class="admin-stat-card"><span>Notifications</span><b>${d.notifications.length}</b></div><div class="admin-stat-card"><span>My List</span><b>${safeLen('novara_list')}</b></div><div class="admin-stat-card"><span>Continue Watching</span><b>${safeLen('novara_continue_watching')}</b></div></div><div class="admin-grid"><div class="admin-card"><div class="admin-card-icon">📢</div><h3>Latest announcement</h3>${latest(d.announcements)}</div><div class="admin-card"><div class="admin-card-icon">🔔</div><h3>Latest notification</h3>${latest(d.notifications)}</div><div class="admin-card"><div class="admin-card-icon">✦</div><h3>AI profile</h3><p class="admin-help">${getAIFavCount()} of 3 favorite titles selected.</p><button class="admin-btn" onclick="adminTab('tools')">Manage tools</button></div></div></section><section class="admin-panel" id="admin-publish"><div class="admin-grid"><div class="admin-card"><div class="admin-card-icon">📢</div><h3>Announcement</h3><input class="admin-input" id="annTitle" placeholder="Announcement title"><textarea class="admin-textarea" id="annBody" placeholder="Write an announcement..."></textarea><button class="admin-btn primary" onclick="addAnn()">Publish announcement</button></div><div class="admin-card"><div class="admin-card-icon">🔔</div><h3>Notification</h3><input class="admin-input" id="notTitle" placeholder="Notification title"><textarea class="admin-textarea" id="notBody" placeholder="Write a notification..."></textarea><button class="admin-btn primary" onclick="addNot()">Send notification</button></div><div class="admin-card"><div class="admin-card-icon">📚</div><h3>Published content</h3>${list('Announcements',d.announcements,'announcement')}${list('Notifications',d.notifications,'notification')}</div></div></section><section class="admin-panel" id="admin-tools"><div class="admin-card"><h3>Site maintenance</h3><p class="admin-help">These actions only affect data stored in this browser. Continue Watching is preserved unless you choose to clear it.</p><div class="admin-tools"><div class="admin-tool"><b>AI Favorites</b><span>Clear the 3-title AI onboarding profile so it can be selected again.</span><button class="admin-btn" onclick="resetAIFavorites()">Reset AI profile</button></div><div class="admin-tool"><b>AI onboarding</b><span>Show the 3-favorite setup again on the next visit.</span><button class="admin-btn" onclick="resetAIOnboarding()">Reset onboarding</button></div><div class="admin-tool"><b>My List</b><span>Remove every saved title from this browser.</span><button class="admin-btn admin-danger" onclick="clearLocalList()">Clear My List</button></div><div class="admin-tool"><b>Continue Watching</b><span>Remove playback progress. Use only when you want a fresh start.</span><button class="admin-btn admin-danger" onclick="clearLocalContinue()">Clear Continue Watching</button></div><div class="admin-tool"><b>Theme</b><span>Reset NOVARA to the default Midnight theme.</span><button class="admin-btn" onclick="resetTheme()">Reset theme</button></div><div class="admin-tool"><b>All local data</b><span>Reset NOVARA preferences, AI profile, lists and admin content. This does not change your API token in the HTML.</span><button class="admin-btn admin-danger" onclick="resetAllLocal()">Reset local NOVARA data</button></div></div></div></section><section class="admin-panel" id="admin-logs"><div class="admin-card"><h3>Recent activity</h3>${(d.logs||[]).slice().reverse().slice(0,30).map(x=>`<div class="admin-log"><b>${esc(x.text)}</b><br><span class="admin-note">${esc(x.date)}</span></div>`).join('')||'<div class="admin-empty">No activity yet.</div>'}</div></section></div>`}
+function safeLen(k){try{const x=JSON.parse(localStorage.getItem(k)||'{}');return Array.isArray(x)?x.length:Object.keys(x||{}).length}catch{return 0}}
+function getAIFavCount(){try{return Math.min(3,JSON.parse(localStorage.getItem('novara_ai_favorites')||'[]').length)}catch{return 0}}
+function latest(a){const x=a[a.length-1];return x?`<b>${esc(x.title)}</b><p class="admin-help">${esc(x.body)}</p><small class="admin-note">${esc(x.date)}</small>`:'<div class="admin-empty">Nothing published yet.</div>'}
+function list(label,a,type){return `<h4>${label}</h4>${a.length?a.slice().reverse().slice(0,8).map(x=>`<div class="admin-item"><div><b>${esc(x.title)}</b><div class="admin-note">${esc(x.body)}</div><div class="admin-note">${esc(x.date)}</div></div><button class="admin-btn admin-danger" onclick="deleteAdminPost('${type}',${Number(x.id)})">Delete</button></div>`).join(''):'<p class="admin-note">Nothing published yet.</p>'}`}
+window.adminTab=tab=>{document.querySelectorAll('.admin-panel').forEach(x=>x.classList.toggle('active',x.id==='admin-'+tab));document.querySelectorAll('[data-admin-tab]').forEach(x=>x.classList.toggle('active',x.dataset.adminTab===tab))};
+window.addAnn=()=>{const t=document.getElementById('annTitle').value.trim(),b=document.getElementById('annBody').value.trim();if(!t||!b)return toast('Enter a title and message');const d=data();d.announcements.push({id:Date.now(),title:t,body:b,date:new Date().toLocaleString()});save(d);log('Published announcement: '+t);renderDashboard();adminTab('publish');toast('Announcement published')};
+window.addNot=()=>{const t=document.getElementById('notTitle').value.trim(),b=document.getElementById('notBody').value.trim();if(!t||!b)return toast('Enter a title and message');const d=data();d.notifications.push({id:Date.now(),title:t,body:b,date:new Date().toLocaleString()});save(d);log('Sent notification: '+t);renderDashboard();adminTab('publish');toast('Notification sent')};
+window.deleteAdminPost=(type,id)=>{const d=data(),k=type==='announcement'?'announcements':'notifications';d[k]=d[k].filter(x=>Number(x.id)!==Number(id));save(d);log('Deleted '+type);renderDashboard();adminTab('publish');toast('Deleted')};
+window.resetAIFavorites=()=>{localStorage.removeItem('novara_ai_favorites');localStorage.removeItem('novara_ai_likes');log('Reset AI favorite profile');renderDashboard();adminTab('tools');toast('AI profile reset')};
+window.resetAIOnboarding=()=>{localStorage.removeItem('novara_ai_onboarded_at');log('Reset AI onboarding');renderDashboard();adminTab('tools');toast('AI onboarding will show again')};
+window.clearLocalList=()=>{if(!confirm('Clear My List?'))return;localStorage.removeItem('novara_list');log('Cleared My List');renderDashboard();adminTab('tools');toast('My List cleared')};
+window.clearLocalContinue=()=>{if(!confirm('Clear Continue Watching?'))return;localStorage.removeItem('novara_continue_watching');window.renderContinueWatching?.();log('Cleared Continue Watching');renderDashboard();adminTab('tools');toast('Continue Watching cleared')};
+window.resetTheme=()=>{localStorage.removeItem('novara_theme');document.body.dataset.theme='midnight';log('Reset theme');renderDashboard();adminTab('tools');toast('Theme reset')};
+window.resetAllLocal=()=>{if(!confirm('Reset NOVARA local data? This clears preferences, AI profile, lists, Continue Watching and admin posts.'))return;['novara_theme','novara_list','novara_continue_watching','novara_ai_favorites','novara_ai_onboarded_at','novara_ai_personality','novara_ai_likes','novara_openrouter_model','novara_openrouter_key','novara_beta_features','novara_beta_program','novara_autoplay','novara_autonext','novara_performance_mode','novara_lite_images','novara_reduce_motion','novara_compact_cards','novara_hover_effects','novara_backdrop_effects','novara_show_ratings','novara_font_size','novara_contrast','novara_focus','novara_profile_v1','novara_profiles_v2','novara_active_profile_v2','novara_tv_remote'].forEach(k=>localStorage.removeItem(k));save({notifications:[],announcements:[],logs:[]});location.reload()};
+window.adminLogout=()=>{sessionStorage.removeItem('novara_admin_auth');log('Admin signed out');renderLogin()};
 window.getNovaraAdminData=data;
 window.addEventListener('keydown',e=>{if(e.key==='Escape')closeAdmin()});
-})();
-</script></body>
+})();</script>
+
+</body>
 </html>
